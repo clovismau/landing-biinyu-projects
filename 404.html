@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="es" data-title-es="Página no encontrada — Biinyu Studio" data-title-en="Page not found — Biinyu Studio">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Página no encontrada — Biinyu Studio</title>
+<meta name="robots" content="noindex">
+<meta name="theme-color" content="#040A12">
+<link rel="icon" href="/assets/vector/favicon.svg" type="image/svg+xml">
+<script>try{var l=localStorage.getItem('biinyu_lang');if(l==='en'||(l!=='es'&&(navigator.language||'').toLowerCase().indexOf('en')===0)){document.documentElement.lang='en';document.title=document.documentElement.getAttribute('data-title-en')}}catch(e){}</script>
+<!-- Rutas desde la raíz ("/assets/…") a propósito: el servidor muestra esta
+     página en cualquier URL inexistente, incluso en subcarpetas. -->
+<link rel="stylesheet" href="/assets/site/fonts.css">
+<link rel="stylesheet" href="/assets/site/legal.css">
+<style>
+.nf-page{position:relative;isolation:isolate;overflow-x:hidden}
+.nf-page::before{content:"";position:fixed;inset:-40px;z-index:-2;background:url(/assets/parallax/seccion2-poster.jpg) center/cover no-repeat;
+  opacity:.16;filter:blur(20px) saturate(1.15)}
+.nf-page::after{content:"";position:fixed;inset:0;z-index:-1;background:radial-gradient(ellipse at 50% 38%, rgba(4,10,18,.15), #040A12 76%)}
+
+.nf{flex:1;display:flex;flex-direction:column;align-items:center;justify-content:center;width:100%;max-width:760px;margin:0 auto;
+  padding:8px var(--lg-edge) 72px;text-align:center}
+
+/* "4 ▢ 4": el cero es el hueco a la medida de Oyyo, que flota sin encajar.
+   Al pasar el cursor (o tocar), Oyyo cae en su sitio. */
+.nf-stage{--s:clamp(4.2rem,15vw,9rem);position:relative;display:flex;align-items:center;justify-content:center;gap:clamp(.5rem,2.4vw,1.4rem);
+  margin:clamp(64px,12vh,120px) 0 clamp(28px,5vh,44px);cursor:pointer;-webkit-tap-highlight-color:transparent;user-select:none}
+.nf-digit{display:block;font:800 calc(var(--s) * 1.6)/.78 "Baloo 2",system-ui,sans-serif;color:#FFE23C;
+  text-shadow:0 .025em 0 #E3C024,0 .05em 0 #C5A51B,0 .075em 0 #A28714,0 .1em 0 #7E690E,0 .2em .22em rgba(0,0,0,.55);transform:translateY(-.05em)}
+.nf-slot{position:relative;flex:none;display:block;width:var(--s);height:var(--s)}
+.nf-hole{position:absolute;inset:-6%;border-radius:24%;background:#01050A;
+  box-shadow:inset 0 calc(var(--s) * .09) calc(var(--s) * .14) rgba(0,0,0,.9),inset 0 -2px 0 rgba(255,255,255,.07),0 0 0 2px rgba(255,226,60,.2);
+  transition:box-shadow .7s ease}
+.nf-hole::after{content:"";position:absolute;inset:16%;border:2px dashed rgba(255,226,60,.24);border-radius:16%;transition:opacity .4s ease}
+.nf-cube-wrap{position:absolute;inset:0;display:block;transform:translate(48%,-96%) rotate(16deg);transition:transform .9s cubic-bezier(.34,1.22,.64,1)}
+.nf-cube{position:absolute;inset:0;display:block;border-radius:22%;background:linear-gradient(155deg,#F39036 0%,#E07820 55%,#C9631A 100%);
+  box-shadow:inset 0 calc(var(--s) * -.1) calc(var(--s) * .08) rgba(0,0,0,.22),inset 0 2px 0 rgba(255,255,255,.25),0 calc(var(--s) * .18) calc(var(--s) * .24) rgba(0,0,0,.45);
+  animation:nf-bob 3.4s ease-in-out infinite;transition:box-shadow .7s ease}
+.nf-cube i{position:absolute;top:30%;width:13%;height:30%;border-radius:calc(var(--s) * .03);background:#fff;transform-origin:50% 60%;animation:nf-blink 5.2s infinite}
+.nf-cube i:first-child{left:27%}
+.nf-cube i:last-child{right:27%}
+@keyframes nf-bob{0%,100%{transform:translateY(0) rotate(0)}50%{transform:translateY(-8%) rotate(-4deg)}}
+@keyframes nf-blink{0%,93%,100%{transform:scaleY(1)}96%{transform:scaleY(.12)}}
+
+.nf-stage.is-fit .nf-cube-wrap{transform:none}
+.nf-stage.is-fit .nf-cube{animation:none;box-shadow:inset 0 calc(var(--s) * -.1) calc(var(--s) * .08) rgba(0,0,0,.22),inset 0 2px 0 rgba(255,255,255,.25),0 0 0 rgba(0,0,0,0)}
+.nf-stage.is-fit .nf-hole{box-shadow:inset 0 calc(var(--s) * .09) calc(var(--s) * .14) rgba(0,0,0,.9),0 0 0 3px rgba(255,226,60,.6),0 0 calc(var(--s) * .55) rgba(255,226,60,.3)}
+.nf-stage.is-fit .nf-hole::after{opacity:0}
+@media (hover:hover){
+  .nf-stage:hover .nf-cube-wrap{transform:none}
+  .nf-stage:hover .nf-cube{animation:none;box-shadow:inset 0 calc(var(--s) * -.1) calc(var(--s) * .08) rgba(0,0,0,.22),inset 0 2px 0 rgba(255,255,255,.25),0 0 0 rgba(0,0,0,0)}
+  .nf-stage:hover .nf-hole{box-shadow:inset 0 calc(var(--s) * .09) calc(var(--s) * .14) rgba(0,0,0,.9),0 0 0 3px rgba(255,226,60,.6),0 0 calc(var(--s) * .55) rgba(255,226,60,.3)}
+  .nf-stage:hover .nf-hole::after{opacity:0}
+}
+
+.nf .legal-kicker{margin:0 0 10px}
+.nf-title{margin:0;font:800 clamp(2rem,5.6vw,3.3rem)/1.05 "Baloo 2",system-ui,sans-serif;letter-spacing:-.01em;color:#fff;text-wrap:balance}
+.nf-text{max-width:520px;margin:14px auto 0;font-size:1rem;line-height:1.7;color:#C3CFBC}
+.nf-actions{display:flex;flex-wrap:wrap;justify-content:center;gap:12px;margin-top:30px}
+.nf-help{margin:26px 0 0;font-size:.85rem;line-height:1.6;color:rgba(255,255,255,.55)}
+
+@media (max-width:560px){
+  .nf-actions{align-self:stretch;flex-direction:column}
+  .nf-actions .legal-btn{width:100%}
+}
+@media (prefers-reduced-motion:reduce){
+  .nf-cube,.nf-cube i{animation:none}
+  .nf-cube-wrap,.nf-hole,.nf-cube{transition:none}
+}
+</style>
+</head>
+<body class="legal-page nf-page">
+<a class="lp-skip" href="#contenido">Saltar al contenido / Skip to content</a>
+
+<header class="lp-top">
+  <a class="lp-brand" href="/"><img src="/assets/vector/logo.svg" alt="Biinyu Studio" width="140" height="53"></a>
+  <div class="lp-lang" role="group" aria-label="Idioma / Language">
+    <button type="button" data-lang-btn="es" aria-pressed="true">ES</button>
+    <button type="button" data-lang-btn="en" aria-pressed="false">EN</button>
+  </div>
+</header>
+
+<main id="contenido" class="nf">
+  <div class="nf-stage" aria-hidden="true">
+    <span class="nf-digit">4</span>
+    <span class="nf-slot"><span class="nf-hole"></span><span class="nf-cube-wrap"><span class="nf-cube"><i></i><i></i></span></span></span>
+    <span class="nf-digit">4</span>
+  </div>
+
+  <p class="legal-kicker">Error 404</p>
+  <h1 class="nf-title"><span data-i18n-lang="es">Esta página no encaja</span><span data-i18n-lang="en">This page doesn’t fit</span></h1>
+  <p class="nf-text">
+    <span data-i18n-lang="es">Oyyo recorrió todos los pasillos y no encontró lo que buscabas. Puede que el enlace esté roto o que la página se haya movido.</span>
+    <span data-i18n-lang="en">Oyyo searched every corridor and couldn’t find what you were looking for. The link may be broken or the page may have moved.</span>
+  </p>
+  <div class="nf-actions">
+    <a class="legal-btn" href="/"><span data-i18n-lang="es">Volver al inicio</span><span data-i18n-lang="en">Back to home</span></a>
+    <a class="legal-btn legal-btn--secondary" href="/#waitlist"><span data-i18n-lang="es">Unirme a la lista de espera</span><span data-i18n-lang="en">Join the waitlist</span></a>
+  </div>
+  <p class="nf-help">
+    <span data-i18n-lang="es">¿Llegaste aquí desde un enlace nuestro? Avísanos en <mark class="todo" data-todo="correo">[correo de contacto]</mark>.</span>
+    <span data-i18n-lang="en">Did one of our links bring you here? Let us know at <mark class="todo" data-todo="correo">[contact email]</mark>.</span>
+  </p>
+</main>
+
+<footer class="lp-foot">
+  <p>© <span data-year>2026</span> Biinyu Games Studio · Cartagena de Indias, Colombia</p>
+  <nav aria-label="Legal">
+    <a href="/privacidad.html"><span data-i18n-lang="es">Política de privacidad</span><span data-i18n-lang="en">Privacy policy</span></a>
+    <a href="/terminos.html"><span data-i18n-lang="es">Términos y condiciones</span><span data-i18n-lang="en">Terms of use</span></a>
+    <a href="/cookies.html"><span data-i18n-lang="es">Política de cookies</span><span data-i18n-lang="en">Cookie policy</span></a>
+    <button type="button" data-cookie-settings><span data-i18n-lang="es">Preferencias de cookies</span><span data-i18n-lang="en">Cookie settings</span></button>
+  </nav>
+</footer>
+
+<script>
+(function(){
+  var stage = document.querySelector('.nf-stage');
+  if (stage) stage.addEventListener('click', function(){ stage.classList.toggle('is-fit'); });
+})();
+</script>
+<script src="/assets/site/legal.js" defer></script>
+<script src="/assets/site/consent.js" defer></script>
+</body>
+</html>

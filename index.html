@@ -1,0 +1,1221 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Biinyu Studio — OYYO</title>
+<meta name="description" content="Biinyu Studio: 10 años farmeando XP. Conoce OYYO, nuestro próximo lanzamiento.">
+<meta name="theme-color" content="#040A12">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Biinyu Studio">
+<meta property="og:title" content="Biinyu Studio — OYYO">
+<meta property="og:description" content="10 años farmeando XP. Conoce OYYO, nuestro próximo lanzamiento, y únete a la lista de espera.">
+<meta property="og:locale" content="es_CO">
+<meta property="og:locale:alternate" content="en_US">
+<meta name="twitter:card" content="summary">
+<link rel="icon" href="assets/vector/favicon.svg" type="image/svg+xml">
+<script>try{var l=localStorage.getItem('biinyu_lang');if(l==='en'||(l!=='es'&&(navigator.language||'').toLowerCase().indexOf('en')===0))document.documentElement.lang='en'}catch(e){}</script>
+<link rel="preload" href="assets/fonts/Poppins-400-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="assets/fonts/Poppins-700-latin.woff2" as="font" type="font/woff2" crossorigin>
+<style>
+/* FONTS:START */
+/* Tipografías servidas desde el propio hosting: el navegador del visitante
+   no se conecta a Google Fonts (evita enviar su IP a terceros). */
+@font-face{font-family:"Baloo 2";font-style:normal;font-weight:500;font-display:swap;src:url(assets/fonts/Baloo2-500-latin-ext.woff2) format("woff2");unicode-range:U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF}
+@font-face{font-family:"Baloo 2";font-style:normal;font-weight:500;font-display:swap;src:url(assets/fonts/Baloo2-500-latin.woff2) format("woff2");unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD}
+@font-face{font-family:"Baloo 2";font-style:normal;font-weight:600;font-display:swap;src:url(assets/fonts/Baloo2-600-latin-ext.woff2) format("woff2");unicode-range:U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF}
+@font-face{font-family:"Baloo 2";font-style:normal;font-weight:600;font-display:swap;src:url(assets/fonts/Baloo2-600-latin.woff2) format("woff2");unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD}
+@font-face{font-family:"Baloo 2";font-style:normal;font-weight:700;font-display:swap;src:url(assets/fonts/Baloo2-700-latin-ext.woff2) format("woff2");unicode-range:U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF}
+@font-face{font-family:"Baloo 2";font-style:normal;font-weight:700;font-display:swap;src:url(assets/fonts/Baloo2-700-latin.woff2) format("woff2");unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD}
+@font-face{font-family:"Baloo 2";font-style:normal;font-weight:800;font-display:swap;src:url(assets/fonts/Baloo2-800-latin-ext.woff2) format("woff2");unicode-range:U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF}
+@font-face{font-family:"Baloo 2";font-style:normal;font-weight:800;font-display:swap;src:url(assets/fonts/Baloo2-800-latin.woff2) format("woff2");unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD}
+@font-face{font-family:"Poppins";font-style:italic;font-weight:700;font-display:swap;src:url(assets/fonts/Poppins-Italic700-latin-ext.woff2) format("woff2");unicode-range:U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF}
+@font-face{font-family:"Poppins";font-style:italic;font-weight:700;font-display:swap;src:url(assets/fonts/Poppins-Italic700-latin.woff2) format("woff2");unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD}
+@font-face{font-family:"Poppins";font-style:normal;font-weight:400;font-display:swap;src:url(assets/fonts/Poppins-400-latin-ext.woff2) format("woff2");unicode-range:U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF}
+@font-face{font-family:"Poppins";font-style:normal;font-weight:400;font-display:swap;src:url(assets/fonts/Poppins-400-latin.woff2) format("woff2");unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD}
+@font-face{font-family:"Poppins";font-style:normal;font-weight:500;font-display:swap;src:url(assets/fonts/Poppins-500-latin-ext.woff2) format("woff2");unicode-range:U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF}
+@font-face{font-family:"Poppins";font-style:normal;font-weight:500;font-display:swap;src:url(assets/fonts/Poppins-500-latin.woff2) format("woff2");unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD}
+@font-face{font-family:"Poppins";font-style:normal;font-weight:600;font-display:swap;src:url(assets/fonts/Poppins-600-latin-ext.woff2) format("woff2");unicode-range:U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF}
+@font-face{font-family:"Poppins";font-style:normal;font-weight:600;font-display:swap;src:url(assets/fonts/Poppins-600-latin.woff2) format("woff2");unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD}
+@font-face{font-family:"Poppins";font-style:normal;font-weight:700;font-display:swap;src:url(assets/fonts/Poppins-700-latin-ext.woff2) format("woff2");unicode-range:U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF}
+@font-face{font-family:"Poppins";font-style:normal;font-weight:700;font-display:swap;src:url(assets/fonts/Poppins-700-latin.woff2) format("woff2");unicode-range:U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD}
+/* FONTS:END */
+/* ============================================================
+   Basado en el SVG de la maqueta entregado por el estudio
+   (Figma "Logo-Biinyu", node 848:14). Los assets salen tal cual
+   de ese archivo:
+     · assets/parallax/{fondo,nivel3,nivel2,nivel1}.png
+       → las 4 capas de Parallax.svg, PNG originales byte a byte
+         (sin recompresión, para no perder calidad)
+     · assets/parallax/seccion2.png   → arte de la sección OYYO (queda
+       solo como imagen de respaldo/descarga; el fondo en vivo es el video)
+     · assets/video/oyyo-trailer.mp4  → video de la sección OYYO, en bucle
+       (de Seccion 2.svg, PNG 2x original 2880x1626)
+     · assets/vector/oyyo-s2.svg       → wordmark de la sección OYYO
+     · assets/parallax/correo.png     → arte de la sección 3 (de seccion-3-correo.svg)
+     · assets/vector/s3-{jugar,oyyo}.svg → "JUGAR OYYO" de la sección 3
+     · assets/vector/{titulo,oyyo,logo}.svg
+       → vectores originales (gradientes y extrusión incluidos)
+   Todo lo demás — el motor de parallax por profundidad, el zoom
+   ligado al scroll, las partículas y la lista de espera — es
+   implementación nueva sobre esa identidad visual.
+   ============================================================ */
+:root{
+  --yellow:#FFE23C;
+  --ink:#F6FBEF;
+  --ink-dim:#B9C7B0;
+  --ink-faint:#788575;
+  --bg:#040A12;
+  --surface:rgba(255,255,255,.06);
+  --surface-strong:rgba(255,255,255,.11);
+  --surface-border:rgba(255,255,255,.14);
+  --btn-ink:#040A12;
+  --font-display:'Baloo 2', ui-rounded, system-ui, sans-serif;
+  --font-body:'Poppins', sans-serif;
+  --edge:clamp(20px, 6vw, 64px);
+  --maxw:1180px;
+  --ease-out:cubic-bezier(.16,.8,.24,1);
+}
+
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+@media (prefers-reduced-motion: reduce){ html{scroll-behavior:auto} }
+
+body{
+  margin:0;background:var(--bg);color:var(--ink);
+  font-family:var(--font-body);font-weight:400;
+  -webkit-font-smoothing:antialiased;overflow-x:hidden;min-height:100vh;
+}
+img,svg{max-width:100%;display:block}
+a{color:inherit}
+button{font-family:inherit;background:none;border:none;color:inherit;-webkit-appearance:none;appearance:none;cursor:pointer}
+::selection{background:var(--yellow);color:var(--btn-ink)}
+:focus-visible{outline:2px solid var(--yellow);outline-offset:3px;border-radius:6px}
+.wrap{max-width:var(--maxw);margin:0 auto;padding:0 var(--edge)}
+.sr-only{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap}
+
+h1,h2,h3{font-family:var(--font-display);font-weight:700;line-height:1.08;letter-spacing:-.01em;margin:0}
+p{line-height:1.7;color:var(--ink-dim);margin:0}
+
+[data-i18n-lang]{display:none}
+html[lang="es"] [data-i18n-lang="es"]{display:initial}
+html[lang="en"] [data-i18n-lang="en"]{display:initial}
+span[data-i18n-lang]{display:none}
+html[lang="es"] span[data-i18n-lang="es"]{display:inline}
+html[lang="en"] span[data-i18n-lang="en"]{display:inline}
+
+
+
+/* reveal-on-scroll */
+.reveal{opacity:0;transform:translateY(26px);transition:opacity .8s var(--ease-out), transform .8s var(--ease-out)}
+.reveal.in{opacity:1;transform:none}
+@media (prefers-reduced-motion: reduce){ .reveal{opacity:1!important;transform:none!important;transition:none!important} }
+
+/* ============================================================
+   HEADER
+   ============================================================ */
+.topbar{
+  position:fixed;top:0;left:0;right:0;z-index:100;
+  display:flex;align-items:center;justify-content:space-between;
+  /* top-padding subido 8px a pedido del cliente: separa el logo y el ES/EN
+     un poco más del borde superior */
+  padding:26px var(--edge) 18px;transition:background .4s ease, backdrop-filter .4s ease;
+}
+.topbar.scrolled{background:rgba(4,10,18,.28);backdrop-filter:blur(4px) saturate(1.2);-webkit-backdrop-filter:blur(4px) saturate(1.2)}
+.topbar .brand{display:block;text-decoration:none}
+.brand-logo{height:44px;width:auto;transition:transform .35s var(--ease-out)}
+.brand:hover .brand-logo{transform:scale(1.05) rotate(-2deg)}
+
+.lang-switch{display:flex;gap:3px;background:var(--surface);border:1px solid var(--surface-border);border-radius:999px;padding:3px}
+.lang-switch button{
+  padding:7px 15px;border-radius:999px;font-family:var(--font-display);font-size:.75rem;font-weight:700;
+  letter-spacing:.04em;color:var(--ink-dim);transition:.25s;
+}
+.lang-switch button[aria-pressed="true"]{background:var(--yellow);color:var(--btn-ink)}
+
+/* ============================================================
+   HERO — PARALLAX
+   Recreación exacta del frame "Parallax.svg" (1440x1025): mismas
+   capas PNG originales, mismos rects, mismo orden de pintado.
+   Sobre esa composición, cada capa reacciona al scroll y al cursor
+   con su propia velocidad para dar profundidad.
+   ============================================================ */
+/* El hero ES el frame: toma la proporción exacta 1440/1025 del
+   archivo y la escala al ancho de la pantalla. Nada de "cover" ni
+   sobre-escalado: los límites de ancho y alto son los del archivo,
+   aunque el frame termine más alto que la ventana (la página sigue
+   con scroll normal). */
+#hero{position:relative;width:100%;aspect-ratio:1440 / 1025;overflow:hidden;isolation:isolate;background:var(--bg)}
+
+/* El lienzo ocupa el hero 1:1, así cada % de las capas es un % del
+   frame original y la composición es idéntica al archivo. */
+.px-stage{position:absolute;left:0;top:0;width:100%;height:100%}
+/* Las capas del frente (Nivel 3/2/1) son puro decorado, pero al pintarse
+   por encima del texto de "bajar" (para poder taparlo, ver .hero-fg)
+   también le tapaban el clic y el hover aunque se vieran transparentes.
+   pointer-events:none deja que el clic y el movimiento del cursor pasen
+   de largo hasta el enlace y hasta el propio #hero. */
+.px-stage--front{pointer-events:none}
+.px-layer{position:absolute;will-change:transform;backface-visibility:hidden}
+/* Cada capa ya tiene el rect exacto de su pattern en el SVG (que a su
+   vez respeta la proporción de su PNG), así que la imagen se ajusta a
+   ese rect sin recortes. */
+.px-layer img{width:100%;height:100%;display:block;object-fit:fill}
+
+/* Rects de Parallax.svg, en % de 1440x1025 (derivados de la matriz de
+   cada <pattern>). Las capas que tocan el borde del frame se amplían
+   lo MÍNIMO, desde el centro del frame, para tener un sangrado oculto
+   mayor que su recorrido máximo con el cursor (+2px de margen): así
+   al mover el mouse nunca se ve el corte de la imagen.
+     Fondo ×1.0097 · Nivel 2 ×1.0306 · Nivel 1 ×1.0306
+   Nivel 3 ya sobresale lo suficiente en el archivo (30px arriba,
+   23px a la derecha) y queda idéntico. Recorridos del cursor, en px
+   del frame (data-mouse): Fondo 5, Nivel 3 11, Nivel 2 16, Nivel 1 20. */
+.px-fondo {left:-0.4861%;   top:-0.4861%;   width:100.9722%;   height:100.9722%}
+.px-n3    {left:7.9167%;    top:-2.9268%;   width:93.6806%;    height:78.7319%}
+.px-n2    {left:-2.4694%;   top:-2.8348%;   width:105.6432%;   height:97.2952%}
+.px-n1    {left:-1.5278%;   top:36.0749%;   width:103.0556%;   height:64.8496%}
+
+/* Degradado del archivo (paint4): de #040A12 al 10% a #040A12 sólido
+   entre y=821 y y=1025, pintado ENCIMA de Nivel 1 — funde el pie de
+   las rocas con la siguiente sección. Viaja pegado a Nivel 1 (misma
+   velocidad) y tiene una cola sólida hacia abajo, más un poco de
+   ancho extra a los lados: así, cuando las capas suben o se mueven
+   con el cursor, el borde inferior nunca queda al descubierto.
+   24.9084% = 204px de degradado dentro de un bloque de 79.9024% del frame. */
+.px-fade{left:-5%;top:80.0976%;width:110%;height:79.9024%;
+  background:linear-gradient(180deg, rgba(4,10,18,.1) 0%, #040A12 24.9084%, #040A12 100%);
+}
+
+/* Móvil vertical: con el frame escalado al ancho quedaría una franja
+   muy baja, así que ahí el hero toma una altura propia y el lienzo
+   (siempre 1440x1025, nunca deformado) se ajusta a esa altura y se
+   centra; el título vive dentro del lienzo, así que sigue alineado. */
+@media (max-width:760px){
+  #hero{aspect-ratio:auto;height:min(78svh,128vw)}
+  .px-stage{width:auto;height:100%;aspect-ratio:1440 / 1025;left:50%;transform:translateX(-50%)}
+}
+.px-particles{position:absolute;inset:-80px;pointer-events:none}
+.spark{
+  position:absolute;border-radius:50%;background:var(--yellow);
+  box-shadow:0 0 10px 2px rgba(255,226,60,.8), 0 0 22px 6px rgba(255,226,60,.35);
+  animation:sparkFloat 6s ease-in-out infinite;
+}
+.spark.blue{background:#5FE0E8;box-shadow:0 0 10px 2px rgba(95,224,232,.8), 0 0 22px 6px rgba(95,224,232,.35)}
+@keyframes sparkFloat{0%,100%{transform:translateY(0) scale(1);opacity:.85}50%{transform:translateY(-16px) scale(1.15);opacity:1}}
+@media (prefers-reduced-motion: reduce){ .spark{animation:none} }
+
+/* Título: Letras.svg de la maqueta (721x245), en su posición exacta del
+   frame Parallax (1440x1025): x=360, y=268 → left 25%, top 26.1463%,
+   ancho 721/1440. Vive DENTRO de .px-stage--back, justo encima del fondo,
+   así queda por detrás de Nivel 3/2/1 y alineado al arte en cualquier
+   pantalla.
+   Cada letra es su propia figura vectorial (trazos separados del SVG
+   original), no un recorte de la imagen: al moverse una nunca arrastra
+   pedazos de sus vecinas. .gl-hit es la zona del cursor y no se mueve,
+   para que la letra no parpadee al subir. Movimiento corto y sin rebote. */
+.hero-title{
+  position:absolute;left:25%;top:26.1463%;width:50.0694%;aspect-ratio:721/245;
+  margin:0;pointer-events:none;will-change:transform;
+}
+.hero-svg{position:absolute;inset:0;width:100%;height:100%;overflow:visible}
+.gl-hit{fill:transparent;pointer-events:all}
+.gl-art{
+  pointer-events:none;transform-box:fill-box;transform-origin:50% 100%;
+  transition:transform .8s cubic-bezier(.22,1,.36,1);
+}
+@media (hover:hover){
+  .gl:hover .gl-art{transform:translateY(-4px) rotate(var(--r)) scale(1.03);transition-duration:.45s}
+}
+.gl:active .gl-art{transform:translateY(-1px) scale(.985);transition-duration:.15s}
+@media (prefers-reduced-motion: reduce){
+  .gl-art{transition:none}
+  .gl:hover .gl-art,.gl:active .gl-art{transform:none}
+}
+
+/* El frame puede ser más alto que la ventana: la invitación a bajar se
+   queda dentro de la primera pantalla (o al pie del hero si es menor).
+   Ya no se desvanece con el scroll: en vez de eso baja junto con el
+   título (mismo data-scroll/data-mouse) y queda oculta debajo de las
+   capas Nivel 3/2/1, igual que las letras. */
+.hero-fg{position:absolute;left:0;right:0;top:0;height:min(100%,100svh);display:flex;flex-direction:column;align-items:center;justify-content:flex-end;padding-bottom:7vh;text-align:center;pointer-events:none;will-change:transform}
+.hero-fg a{pointer-events:auto}
+.scroll-hint{
+  display:inline-flex;flex-direction:column;align-items:center;gap:12px;text-decoration:none;
+  font-family:var(--font-body);font-weight:500;font-size:.8rem;letter-spacing:.01em;
+  color:rgba(255,255,255,.92);transition:color .3s ease;text-shadow:0 2px 12px rgba(4,10,18,.8);
+}
+.scroll-hint:hover{color:var(--yellow)}
+/* Triple chevron de la maqueta: opacidad 1 / .65 / .25 en cascada */
+.chevs{display:flex;flex-direction:column;align-items:center;gap:0}
+.chevs svg{width:13px;height:7px;display:block;margin-top:-2px}
+.chevs svg:first-child{margin-top:0}
+.chevs svg:nth-child(1){opacity:1;   animation:chevPulse 2.1s ease-in-out infinite}
+.chevs svg:nth-child(2){opacity:.65; animation:chevPulse 2.1s ease-in-out .14s infinite}
+.chevs svg:nth-child(3){opacity:.25; animation:chevPulse 2.1s ease-in-out .28s infinite}
+@keyframes chevPulse{0%,100%{transform:translateY(0)}50%{transform:translateY(4px)}}
+@media (prefers-reduced-motion: reduce){ .chevs svg{animation:none} }
+
+/* ============================================================
+   SECCIÓN OYYO — EFECTO DE ZOOM
+   Un wrapper alto mantiene la tarjeta fija (sticky) en pantalla
+   mientras el scroll avanza; su escala y radio de borde se
+   interpolan de "tarjeta centrada" a "sección de ancho completo".
+   ============================================================ */
+/* margin-top negativo: la sección sube y se monta sobre el pie del hero
+   (esa franja ya es el degradado a #040A12), así la tarjeta asoma antes
+   y no queda tan lejos en el scroll. La caja sticky es transparente a
+   los clics para no tapar la invitación a bajar ni el parallax del
+   cursor en esa franja; solo la tarjeta los recibe. */
+#oyyo-zoom-wrap{position:relative;height:340vh;margin-top:-22vh}
+.oyyo-sticky{position:sticky;top:0;height:100svh;display:flex;align-items:center;justify-content:center;overflow:hidden;pointer-events:none}
+.oyyo-sticky .oyyo-card{pointer-events:auto}
+@media (max-width:760px){ #oyyo-zoom-wrap{margin-top:-6vh} }
+/* La tarjeta ES el frame de "Seccion 2.svg" (1440x815) escalado al ancho.
+   --u = 1px DEL ARCHIVO (unidades de contenedor: 100cqw / 1440), así que
+   cada elemento se coloca con las coordenadas exactas del SVG y la
+   composición es la misma a cualquier tamaño. El zoom es un transform,
+   de modo que durante la animación nada se reacomoda. */
+.oyyo-card{
+  --u:calc(100cqw / 1440);
+  container-type:inline-size;
+  position:relative;width:100%;aspect-ratio:1440 / 815;overflow:hidden;
+  background:#040A12;backface-visibility:hidden;
+}
+/* Arte: video en bucle (antes PNG estático), en el mismo rect del archivo.
+   object-fit:cover por si la proporción del video no calza pixel a pixel
+   con la del recorte original — así nunca se ve estirado. */
+.s2-art{position:absolute;left:calc(232 * var(--u));top:0;width:calc(1208 * var(--u));height:calc(682 * var(--u));max-width:none;object-fit:cover}
+.s2-scrim{position:absolute;inset:0;pointer-events:none}
+/* paint0 (vertical): transparente en y=327.5 → 0.797 en y=493.7 → sólido desde y=608.4 (de 815) */
+.s2-scrim-v{background:linear-gradient(180deg, rgba(4,10,18,0) 40.184%, rgba(4,10,18,.797) 60.574%, #040A12 74.644%)}
+/* paint1 (horizontal): sólido hasta x=255.6 → 0.7 en x=471.6 → transparente en x=639 (de 1440) */
+.s2-scrim-h{background:linear-gradient(90deg, #040A12 17.75%, rgba(4,10,18,.7) 32.747%, rgba(4,10,18,0) 44.375%)}
+
+/* Insignia "MUY | PRONTO": contorno blanco 1px, radio 9, mitad derecha rellena.
+   A pedido del cliente se bajó desde y=72 (chocaba con el logo y la barra
+   superior) a justo encima del wordmark: y=412, a 24.7px de él. */
+.s2-badge{position:absolute;left:calc(81 * var(--u));top:calc(412 * var(--u));height:calc(31 * var(--u));margin:0;
+  display:inline-flex;align-items:stretch;border:calc(1 * var(--u)) solid #fff;border-radius:calc(9 * var(--u));
+  font:600 calc(11.3 * var(--u))/1 var(--font-body);text-transform:uppercase;white-space:nowrap}
+.s2-badge-a{display:flex;align-items:center;min-width:calc(47.5 * var(--u));padding:0 calc(7.3 * var(--u)) 0 calc(14.1 * var(--u));color:#fff}
+.s2-badge-b{display:flex;align-items:center;justify-content:center;min-width:calc(74.5 * var(--u));padding:0 calc(14 * var(--u));
+  background:#fff;color:#040A12;border-radius:calc(8 * var(--u))}
+
+/* Wordmark OYYO: el trazo vectorial del archivo, con su degradado */
+.s2-wordmark{position:absolute;left:calc(81.8 * var(--u));top:calc(467.7 * var(--u));width:calc(207.3 * var(--u));margin:0;line-height:0}
+.s2-wordmark img{width:100%;height:auto}
+/* Guiño divertido: el título "salta" como si buscara encajar, igual que
+   el personaje. Sutil (unos pocos grados y píxeles), con rebote elástico;
+   al soltar/tocar se "aplasta" un poco, como si encajara en su sitio. */
+.s2-wordmark img{transition:transform .5s cubic-bezier(.34,1.56,.64,1), filter .35s ease;transform-origin:50% 100%}
+.s2-wordmark:active img{transform:scale(.93,.86);transition-duration:.12s}
+@media (hover:hover){
+  .s2-wordmark:hover img{transform:translateY(-5px) rotate(-2.5deg) scale(1.07);filter:drop-shadow(0 12px 22px rgba(255,226,60,.4))}
+}
+@media (prefers-reduced-motion: reduce){
+  .s2-wordmark img{transition:none}
+  .s2-wordmark:hover img,.s2-wordmark:active img{transform:none;filter:none}
+}
+
+/* Párrafo: Poppins 400 16/24, justificado (líneas 1 y 2 miden igual en el
+   archivo) con la última a la izquierda; caja de 1078 → mismos cortes de línea */
+.s2-desc{position:absolute;left:calc(80 * var(--u));top:calc(563.4 * var(--u));width:calc(1078 * var(--u));margin:0;
+  font:400 calc(16 * var(--u))/calc(24 * var(--u)) var(--font-body);color:#fff;text-align:justify;text-align-last:left}
+
+/* Botones (boton-quiero-jugarlo.svg / boton-descargar-wallpaper.svg):
+   Poppins Bold 22, alto 65, radio 18, ~30 de margen lateral, separados 40.
+   Relieve del archivo: sombra interior hacia abajo (dy -7, desenfoque 3 →
+   6px en CSS, negro 25%) sobre un borde interior de 2px. Al presionar, la
+   sombra se achica y el botón baja 1px, como una tecla. */
+.s2-actions{position:absolute;left:calc(80 * var(--u));top:calc(678 * var(--u));display:flex;gap:calc(40 * var(--u))}
+.s2-btn{--bx:0px;--by:0px;--press:0px;--edge-c:rgba(0,0,0,.2);
+  display:inline-flex;align-items:center;justify-content:center;height:calc(65 * var(--u));
+  padding:calc(1.4 * var(--u)) calc(30 * var(--u)) 0;border-radius:calc(18 * var(--u));font:700 calc(22 * var(--u))/1 var(--font-body);
+  text-decoration:none;white-space:nowrap;transform:translate(var(--bx),calc(var(--by) + var(--press)));
+  box-shadow:inset 0 calc(-7 * var(--u)) calc(6 * var(--u)) rgba(0,0,0,.25), inset 0 0 0 calc(2 * var(--u)) var(--edge-c);
+  transition:transform .15s ease, filter .3s ease, background-color .3s ease, box-shadow .15s ease}
+.s2-btn:active{--press:calc(1 * var(--u));
+  box-shadow:inset 0 calc(-3 * var(--u)) calc(5 * var(--u)) rgba(0,0,0,.25), inset 0 0 0 calc(2 * var(--u)) var(--edge-c)}
+.s2-btn-primary{color:#040A12;background:#FAE33D}
+.s2-btn-primary:hover{filter:brightness(1.06)}
+.s2-btn-secondary{--edge-c:rgba(255,255,255,.1);color:#fff;background:#44556C}
+.s2-btn-secondary:hover{background:#4E6079}
+
+/* ============================================================
+   SECCIÓN 3 — LISTA DE ESPERA
+   Recreación de "seccion-3-correo.svg" (1280x330). Igual que en la
+   sección 2, --u = 1px del archivo (100cqw / 1280): cada pieza va en
+   su coordenada exacta a cualquier ancho. Arte PNG original del
+   archivo, su degradado pasado a CSS, textos reales en Poppins (para
+   ES/EN) y "JUGAR OYYO" con los trazos vectoriales del archivo.
+   ============================================================ */
+#waitlist{position:relative;padding:calc(147 / 1440 * 100vw) 0 calc(80 / 1440 * 100vw)}
+.wl-card{
+  --u:calc(100cqw / 1280);
+  container-type:inline-size;
+  position:relative;width:calc(1280 / 1440 * 100%);margin:0 auto;aspect-ratio:1280 / 330;
+  /* radio 24 del archivo en %: --u no aplica a la propia tarjeta (sus unidades cq miden al contenedor padre) */
+  border-radius:calc(24 / 1280 * 100%) / calc(24 / 330 * 100%);overflow:hidden;isolation:isolate;background:#312725;
+}
+/* Arte: PNG original 1487x1058 en su rect del archivo (x -103, y -564) */
+.wl-art{position:absolute;left:calc(-103 * var(--u));top:calc(-564 * var(--u));width:calc(1487 * var(--u));height:calc(1058 * var(--u));max-width:none;z-index:-2}
+/* paint0: de (1280,15.5) a (30.9,396) en px del archivo → ángulo y paradas sobre la línea CSS */
+.wl-scrim{position:absolute;inset:0;z-index:-1;pointer-events:none;
+  background:linear-gradient(253.06deg, rgba(134,84,42,0) 0.34%, rgba(99,67,41,.8) 41.22%, rgba(76,54,39,.98) 66.89%, #312725 96.36%)}
+/* Poppins Bold Italic 28 · línea base del archivo en y=79 */
+.wl-title{position:absolute;left:calc(60 * var(--u));top:calc(55.2 * var(--u));margin:0;
+  font:italic 700 calc(28 * var(--u))/calc(28 * var(--u)) var(--font-body);letter-spacing:0;color:#fff;white-space:nowrap}
+.wl-words{display:contents}
+.wl-word{position:absolute;top:calc(95.68 * var(--u));height:calc(43.68 * var(--u));width:auto;max-width:none}
+.wl-jugar{left:calc(61.86 * var(--u))}
+.wl-oyyo{left:calc(268.64 * var(--u))}
+html[lang="en"] .wl-oyyo{left:calc(61.86 * var(--u))}
+/* Mismo guiño que el OYYO de la sección 2: cada palabra "salta" por su
+   lado, con un ligero giro en sentidos opuestos para que se vean vivas
+   sin robotizarse; se "aplastan" un poco al tocar/hacer clic. */
+.wl-word{transition:transform .5s cubic-bezier(.34,1.56,.64,1), filter .35s ease;transform-origin:50% 100%}
+.wl-word:active{transform:scale(.93,.86);transition-duration:.12s}
+@media (hover:hover){
+  .wl-jugar:hover{transform:translateY(-4px) rotate(-3deg) scale(1.06);filter:drop-shadow(0 10px 18px rgba(255,226,60,.4))}
+  .wl-oyyo:hover{transform:translateY(-4px) rotate(3deg) scale(1.06);filter:drop-shadow(0 10px 18px rgba(255,226,60,.4))}
+}
+@media (prefers-reduced-motion: reduce){
+  .wl-word{transition:none}
+  .wl-word:hover,.wl-word:active{transform:none;filter:none}
+}
+/* Poppins 400 16/24 · línea base y=173.1 */
+.wl-sub{position:absolute;left:calc(60 * var(--u));top:calc(155.8 * var(--u));margin:0;
+  font:400 calc(16 * var(--u))/calc(24 * var(--u)) var(--font-body);color:#fff;white-space:nowrap}
+.wl-count{position:absolute;left:calc(60 * var(--u));top:calc(190 * var(--u));margin:0;
+  font:500 calc(13 * var(--u))/1.4 var(--font-body);color:rgba(255,255,255,.72)}
+.wl-form{display:contents}
+/* Campo: 493x55, radio 18, blanco. Subido 18u desde su posición original
+   (227→209) junto con el botón, el estado y la casilla de autorización:
+   dejaban solo 18px libres al pie de la tarjeta frente a 55px arriba,
+   se sentía apretado abajo. */
+.wl-input{position:absolute;left:calc(60 * var(--u));top:calc(209 * var(--u));width:calc(493 * var(--u));height:calc(55 * var(--u));
+  margin:0;border:0;border-radius:calc(18 * var(--u));padding:0 calc(22 * var(--u));background:#fff;color:#040A12;
+  font:400 calc(16 * var(--u))/1 var(--font-body);transition:box-shadow .25s ease}
+.wl-input::placeholder{color:rgba(4,10,18,.42)}
+.wl-input:focus{outline:none;box-shadow:0 0 0 calc(3 * var(--u)) rgba(255,226,60,.75)}
+/* Botón: 171x55, radio 18, Poppins Bold 18; trazo interior 2px negro 20%
+   y sombra interior (0,-7) desenfoque 6 negro 25%, como en el archivo */
+.wl-btn{--bx:0px;--by:0px;position:absolute;left:calc(569 * var(--u));top:calc(209 * var(--u));width:calc(171 * var(--u));height:calc(55 * var(--u));
+  display:flex;align-items:center;justify-content:center;border-radius:calc(18 * var(--u));background:var(--yellow);color:#040A12;
+  font:700 calc(18 * var(--u))/1 var(--font-body);white-space:nowrap;
+  box-shadow:inset 0 0 0 calc(2 * var(--u)) rgba(0,0,0,.2), inset 0 calc(-7 * var(--u)) calc(6 * var(--u)) rgba(0,0,0,.25);
+  transform:translate(var(--bx),var(--by));transition:transform .15s ease, filter .3s ease}
+.wl-btn:hover{filter:brightness(1.06)}
+.wl-btn:disabled{filter:saturate(.6) brightness(.9);cursor:progress}
+/* Estado del envío: a la derecha del botón, centrado con él */
+.wl-status{position:absolute;left:calc(760 * var(--u));top:calc(209 * var(--u));height:calc(55 * var(--u));max-width:calc(470 * var(--u));margin:0;
+  display:flex;align-items:center;font:600 calc(14 * var(--u))/1.35 var(--font-body);color:#fff;text-shadow:0 1px 10px rgba(20,12,8,.9)}
+.wl-status:empty{display:none}
+/* Autorización de tratamiento de datos (Ley 1581 de 2012): obligatoria */
+.wl-consent{position:absolute;left:calc(60 * var(--u));top:calc(275 * var(--u));display:flex;align-items:flex-start;gap:calc(10 * var(--u));
+  max-width:calc(700 * var(--u));margin:0;font:400 calc(13 * var(--u))/1.45 var(--font-body);color:rgba(255,255,255,.88)}
+.wl-consent input{-webkit-appearance:none;appearance:none;flex:none;width:calc(18 * var(--u));height:calc(18 * var(--u));margin:calc(1 * var(--u)) 0 0;
+  border-radius:calc(5 * var(--u));background:rgba(255,255,255,.1);box-shadow:inset 0 0 0 calc(1.5 * var(--u)) rgba(255,255,255,.72);cursor:pointer;
+  transition:background-color .2s ease,box-shadow .2s ease}
+.wl-consent input:checked{box-shadow:none;background:var(--yellow) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath d='M3.5 8.5l3 3 6-7' fill='none' stroke='%23040A12' stroke-width='2.4' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") center/80% no-repeat}
+.wl-consent input[aria-invalid="true"]{box-shadow:inset 0 0 0 calc(2 * var(--u)) #FF8A8A}
+.wl-consent label{cursor:pointer}
+.wl-consent a{color:var(--yellow);text-underline-offset:2px}
+.wl-input[aria-invalid="true"]{box-shadow:0 0 0 calc(3 * var(--u)) rgba(255,138,138,.85)}
+.wl-hp{position:absolute!important;left:-10000px!important;width:1px;height:1px;opacity:0;pointer-events:none}
+.wl-status[data-state="error"]{color:#FF8A8A}
+.wl-status[data-state="success"]{color:var(--yellow)}
+
+/* Tablet y móvil: a este ancho el frame escalado dejaría letras
+   diminutas, así que la tarjeta pasa a una columna con tamaños propios;
+   se conservan arte, degradado, colores y tipografías del archivo. */
+@media (max-width:900px){
+  #waitlist{padding:72px var(--edge) 56px}
+  .wl-card{--u:1px;width:100%;max-width:560px;aspect-ratio:auto;display:flex;flex-direction:column;align-items:flex-start;gap:14px;padding:32px 24px 28px}
+  .wl-art{left:0;top:0;width:100%;height:100%;object-fit:cover;object-position:80% 62%}
+  .wl-scrim{background:linear-gradient(180deg, rgba(49,39,37,.72) 0%, rgba(49,39,37,.9) 60%, #312725 100%)}
+  .wl-title,.wl-word,.wl-sub,.wl-count,.wl-input,.wl-btn,.wl-status{position:relative;left:auto;top:auto}
+  html[lang="en"] .wl-oyyo{left:auto}
+  .wl-title{font-size:22px;line-height:1.2;white-space:normal}
+  .wl-words{display:flex;flex-wrap:wrap;gap:6px 9px;margin-top:-4px}
+  .wl-word{height:clamp(24px, 9vw, 34px)}
+  .wl-sub{font-size:14px;line-height:22px;white-space:normal}
+  .wl-count{font-size:12px}
+  .wl-form{display:flex;flex-direction:column;gap:12px;width:100%;margin-top:6px}
+  .wl-input,.wl-btn{width:100%;height:52px;border-radius:16px}
+  .wl-input{padding:0 18px}
+  .wl-btn{font-size:17px}
+  .wl-consent{position:relative;left:auto;top:auto;max-width:none;gap:10px;font-size:13px}
+  .wl-consent input{width:20px;height:20px;margin-top:1px;border-radius:6px;box-shadow:inset 0 0 0 1.5px rgba(255,255,255,.72)}
+  .wl-consent input[aria-invalid="true"]{box-shadow:inset 0 0 0 2px #FF8A8A}
+  .wl-status{position:relative;left:auto;top:auto;height:auto;max-width:none;font-size:14px}
+}
+
+/* ============================================================
+   FOOTER
+   ============================================================ */
+footer{position:relative;z-index:2;padding:48px 0 30px;border-top:1px solid var(--surface-border)}
+.footer-grid{display:flex;flex-wrap:wrap;justify-content:space-between;gap:28px;align-items:flex-start}
+.footer-brand-logo{height:34px;margin-bottom:10px}
+.footer-brand p{font-size:.82rem;line-height:1.6}
+.footer-links{display:flex;gap:8px 24px;flex-wrap:wrap}
+.footer-links a{display:inline-flex;align-items:center;gap:6px;padding:4px 0;font-size:.85rem;color:var(--ink-dim);text-decoration:none;transition:color .25s ease}
+.footer-links a:hover{color:var(--yellow)}
+.footer-links svg{width:11px;height:11px;opacity:.6}
+.footer-bottom{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:10px 24px;margin-top:28px;padding-top:20px;
+  border-top:1px solid rgba(255,255,255,.06);font-size:.75rem;color:var(--ink-faint)}
+.footer-bottom p{margin:0;font-size:inherit;line-height:1.5;color:inherit}
+.footer-legal{display:flex;flex-wrap:wrap;gap:6px 20px}
+.footer-legal a,.footer-legal button{padding:4px 0;font-size:.75rem;line-height:1.4;color:var(--ink-dim);text-decoration:none;cursor:pointer;transition:color .25s ease}
+.footer-legal a:hover,.footer-legal button:hover{color:var(--yellow)}
+mark.todo{padding:0 6px;border:1px dashed rgba(255,226,60,.55);border-radius:6px;background:rgba(255,226,60,.14);color:var(--yellow);font-weight:600}
+
+.skip-link{
+  position:absolute;left:12px;top:-60px;z-index:10001;background:var(--yellow);color:var(--btn-ink);
+  padding:10px 16px;border-radius:8px;font-family:var(--font-display);font-weight:700;font-size:.85rem;
+  text-decoration:none;transition:top .2s ease;
+}
+.skip-link:focus{top:12px}
+
+/* Móvil: el frame escalado al ancho dejaría el texto ilegible, así que la
+   tarjeta toma un alto propio y los textos pasan a una columna al pie; el
+   arte y el degradado conservan su lógica. --u:1px = tamaños del archivo 1:1. */
+@media (max-width:760px){
+  .oyyo-card{--u:1px;aspect-ratio:auto;height:92svh;display:flex;flex-direction:column;justify-content:flex-end;gap:16px;padding:24px}
+  .s2-art{left:0;width:100%;height:60%;object-fit:cover;object-position:68% 30%}
+  .s2-scrim-v{background:linear-gradient(180deg, rgba(4,10,18,0) 28%, rgba(4,10,18,.8) 46%, #040A12 60%)}
+  .s2-scrim-h{display:none}
+  .s2-badge{position:relative;left:auto;top:auto;align-self:flex-start}
+  .s2-wordmark,.s2-desc,.s2-actions{position:relative;left:auto;top:auto}
+  .s2-wordmark{width:170px}
+  .s2-desc{width:auto;font-size:14px;line-height:22px;text-align:left}
+  .s2-actions{flex-wrap:wrap;gap:12px}
+  .s2-btn{height:50px;padding:0 22px;border-radius:14px;font-size:16px;
+    box-shadow:inset 0 -5px 5px rgba(0,0,0,.25), inset 0 0 0 1.5px var(--edge-c)}
+  .s2-btn:active{box-shadow:inset 0 -2px 4px rgba(0,0,0,.25), inset 0 0 0 1.5px var(--edge-c)}
+}
+</style>
+</head>
+<body>
+
+<a class="skip-link" href="#main">Saltar al contenido / Skip to content</a>
+
+<header class="topbar" id="topbar">
+  <a class="brand" href="#hero" aria-label="Biinyu Studio — inicio">
+    <img class="brand-logo" src="assets/vector/logo.svg" alt="Biinyu Studio" width="140" height="53">
+  </a>
+  <div class="lang-switch" role="group" aria-label="Idioma / Language">
+    <button type="button" data-lang-btn="es" aria-pressed="true">ES</button>
+    <button type="button" data-lang-btn="en" aria-pressed="false">EN</button>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- ============ HERO PARALLAX ============ -->
+  <section id="hero" aria-label="Biinyu Studio, 10 años farmeando XP">
+    <!-- Recreación exacta de Parallax.svg, mismo orden de pintado:
+         fondo → letras → Nivel 3 → Nivel 2 → Nivel 1 → degradado.
+         Las PNG son las originales del archivo, byte a byte.
+         El scroll invierte el sentido: las capas SUBEN, las letras BAJAN
+         y quedan ocultas debajo de ellas. Nivel 1 (rocas, primer plano) y
+         Nivel 2 casi a la misma velocidad (N1 un poco más rápida); Nivel 3
+         mucho más lento, como corresponde al elemento más lejano.
+         Con el cursor cada capa se mueve según su profundidad, y nunca
+         más de lo que sobresale fuera del frame (ver .px-fondo…), así
+         jamás se ve el corte de una imagen. -->
+    <div class="px-stage px-stage--back">
+      <div class="px-layer px-fondo" data-scroll="-0.035" data-mouse="5" aria-hidden="true"><img src="assets/parallax/fondo.png" alt="" width="1214" height="864" fetchpriority="high"></div>
+      <h1 class="hero-title" data-scroll="0.40" data-mouse="16">
+        <svg class="hero-svg" viewBox="0 0 721 245" fill="none" aria-hidden="true" focusable="false">
+          <g class="gl" style="--r:-1.4deg"><rect class="gl-hit" x="593.43" y="27.72" width="101.7" height="112.57"/><g class="gl-art"><g filter="url(#filter0_i_949_19)"><path d="M627.446 158.76C619.046 158.76 611.846 156.42 605.846 151.74C599.846 147.06 596.006 140.94 594.326 133.38C594.206 132.54 594.026 131.7 593.786 130.86C593.666 129.9 593.546 128.94 593.426 127.98C593.426 127.02 593.426 126.24 593.426 125.64V125.28C593.426 124.92 593.426 124.56 593.426 124.2C593.426 123.84 593.426 123.36 593.426 122.76C593.426 122.04 593.426 121.14 593.426 120.06V110.88C593.426 108.84 593.426 107.58 593.426 107.1C593.426 106.5 593.426 106.08 593.426 105.84C593.426 105.6 593.426 105.12 593.426 104.4V104.22C593.426 103.38 593.426 102.9 593.426 102.78C593.426 102.54 593.426 102.12 593.426 101.52C593.426 100.8 593.426 99.4797 593.426 97.5597V74.1597H628.526C628.526 76.7997 629.066 78.6597 630.146 79.7397C631.226 80.6997 633.086 81.1797 635.726 81.1797H651.386C654.506 81.1797 656.726 80.8197 658.046 80.0997C659.366 79.2597 660.026 77.8797 660.026 75.9597C660.026 74.6397 659.426 73.5597 658.226 72.7197C657.026 71.7597 654.626 70.9197 651.026 70.1997C647.546 69.4797 642.266 68.7597 635.186 68.0397C624.866 66.9597 616.766 65.5797 610.886 63.8997C605.126 62.2197 601.046 59.9997 598.646 57.2397C596.246 54.4797 595.046 50.9997 595.046 46.7997C595.046 34.0797 604.946 27.7197 624.746 27.7197H662.726C671.126 27.7197 677.726 29.7597 682.526 33.8397C687.446 37.7997 689.906 43.2597 689.906 50.2197H658.586C658.586 47.5797 657.506 45.4797 655.346 43.9197C653.306 42.2397 650.366 41.3997 646.526 41.3997H638.246C634.886 41.3997 632.366 41.9397 630.686 43.0197C629.006 44.0997 628.166 45.3597 628.166 46.7997C628.166 48.3597 628.826 49.6797 630.146 50.7597C631.466 51.8397 633.986 52.7397 637.706 53.4597C641.426 54.1797 646.826 54.8997 653.906 55.6197C663.866 56.4597 671.846 58.1397 677.846 60.6597C683.846 63.1797 688.226 66.8397 690.986 71.6397C693.746 76.4397 695.126 82.7397 695.126 90.5397V97.5597C695.126 99.4797 695.126 100.8 695.126 101.52C695.126 102.12 695.126 102.54 695.126 102.78C695.126 102.9 695.126 103.38 695.126 104.22V104.4C695.126 105.12 695.126 105.6 695.126 105.84C695.126 106.08 695.126 106.5 695.126 107.1C695.126 107.58 695.126 108.84 695.126 110.88V120.06C695.126 121.14 695.126 122.04 695.126 122.76C695.126 123.36 695.126 123.84 695.126 124.2C695.126 124.56 695.126 124.92 695.126 125.28V125.64C695.126 126.24 695.066 127.02 694.946 127.98C694.946 128.94 694.886 129.9 694.766 130.86C694.646 131.7 694.526 132.54 694.406 133.38C693.566 138.18 691.526 142.5 688.286 146.34C685.166 150.18 681.206 153.24 676.406 155.52C671.726 157.68 666.626 158.76 661.106 158.76H627.446Z" fill="white"/></g><path d="M662.726 27.7197C671.126 27.7198 677.726 29.7599 682.526 33.8398C687.446 37.7998 689.906 43.2598 689.906 50.2197H658.586C658.586 47.5799 657.506 45.4799 655.346 43.9199C653.306 42.2399 650.366 41.3994 646.526 41.3994H638.246C634.886 41.3994 632.366 41.9397 630.686 43.0195C629.006 44.0995 628.166 45.3598 628.166 46.7998C628.166 48.3598 628.826 49.6798 630.146 50.7598C631.466 51.8397 633.986 52.74 637.706 53.46C641.426 54.18 646.826 54.9001 653.906 55.6201C663.866 56.4601 671.846 58.1402 677.846 60.6602C681.575 62.2264 684.679 64.2328 687.156 66.6797H624.393C619.037 65.8684 614.534 64.9416 610.886 63.8994C605.126 62.2194 601.046 59.9993 598.646 57.2393C596.246 54.4793 595.046 50.9997 595.046 46.7998C595.046 34.0798 604.946 27.7198 624.746 27.7197H662.726Z" fill="white"/></g></g>
+          <g class="gl" style="--r:1.1deg"><rect class="gl-hit" x="479.16" y="27.72" width="103.68" height="125.68"/><g class="gl-art"><g filter="url(#filter1_i_949_19)"><path d="M513.184 158.76C504.784 158.76 497.524 156.42 491.404 151.74C485.404 146.94 481.564 140.82 479.884 133.38C479.764 132.78 479.644 132.12 479.524 131.4C479.404 130.56 479.284 129.78 479.164 129.06C479.164 128.22 479.164 127.56 479.164 127.08V126.9C479.164 126.06 479.164 125.58 479.164 125.46C479.164 125.22 479.164 124.8 479.164 124.2C479.164 123.48 479.164 122.1 479.164 120.06V110.88C479.164 108.84 479.164 107.58 479.164 107.1C479.164 106.5 479.164 106.08 479.164 105.84C479.164 105.6 479.164 105.12 479.164 104.4V104.22C479.164 103.38 479.164 102.9 479.164 102.78C479.164 102.54 479.164 102.12 479.164 101.52C479.164 100.8 479.164 99.4797 479.164 97.5597V61.1997C479.164 54.8397 480.604 49.1397 483.484 44.0997C486.484 39.0597 490.564 35.0997 495.724 32.2197C500.884 29.2197 506.704 27.7197 513.184 27.7197H548.824C555.424 27.7197 561.244 29.1597 566.284 32.0397C571.444 34.9197 575.464 38.8797 578.344 43.9197C581.344 48.9597 582.844 54.7197 582.844 61.1997V97.5597C582.844 99.4797 582.844 100.8 582.844 101.52C582.844 102.12 582.844 102.54 582.844 102.78C582.844 102.9 582.844 103.38 582.844 104.22V104.4C582.844 105.12 582.844 105.6 582.844 105.84C582.844 106.08 582.844 106.5 582.844 107.1C582.844 107.58 582.844 108.84 582.844 110.88V120.06C582.844 121.98 582.844 123.3 582.844 124.02C582.844 124.62 582.844 125.04 582.844 125.28C582.844 125.4 582.844 125.88 582.844 126.72V126.9C582.844 127.62 582.784 128.4 582.664 129.24C582.664 130.08 582.604 130.86 582.484 131.58C582.364 132.18 582.244 132.78 582.124 133.38C580.444 140.82 576.544 146.94 570.424 151.74C564.424 156.42 557.224 158.76 548.824 158.76H513.184ZM522.544 78.6597C524.104 78.6597 525.664 77.9997 527.224 76.6797C528.904 75.2397 529.924 72.1797 530.284 67.4997H531.724C532.084 72.1797 533.044 75.2397 534.604 76.6797C536.284 77.9997 537.904 78.6597 539.464 78.6597C541.864 78.6597 543.604 77.8197 544.684 76.1397C545.884 74.4597 546.484 72.1197 546.484 69.1197V55.2597C546.484 51.6597 545.644 48.7797 543.964 46.6197C542.284 44.3397 539.164 43.1997 534.604 43.1997H527.404C522.964 43.1997 519.844 44.3397 518.044 46.6197C516.364 48.7797 515.524 51.6597 515.524 55.2597V69.1197C515.524 72.1197 516.064 74.4597 517.144 76.1397C518.344 77.8197 520.144 78.6597 522.544 78.6597Z" fill="white"/></g><path d="M548.824 27.7197C555.424 27.7197 561.244 29.16 566.284 32.04C569.498 33.8342 572.271 36.0473 574.6 38.6797H487.503C489.843 36.1264 492.584 33.9727 495.724 32.2197C500.884 29.2198 506.704 27.7197 513.184 27.7197H548.824Z" fill="white"/></g></g>
+          <g class="gl" style="--r:-0.9deg"><rect class="gl-hit" x="353.83" y="0" width="114.84" height="157.68"/><g class="gl-art"><g filter="url(#filter2_i_949_19)"><path d="M353.832 157.68V133.38C353.832 131.34 353.832 130.08 353.832 129.6C353.832 129 353.832 128.58 353.832 128.34C353.832 128.1 353.832 127.62 353.832 126.9V126.72C353.832 125.88 353.832 125.4 353.832 125.28C353.832 125.04 353.832 124.62 353.832 124.02C353.832 123.3 353.832 121.98 353.832 120.06V110.88C353.832 108.84 353.832 107.58 353.832 107.1C353.832 106.5 353.832 106.08 353.832 105.84C353.832 105.6 353.832 105.12 353.832 104.4V104.22C353.832 103.38 353.832 102.9 353.832 102.78C353.832 102.54 353.832 102.12 353.832 101.52C353.832 100.8 353.832 99.48 353.832 97.56V79.56C359.352 79.56 362.832 78.54 364.272 76.5C365.712 74.46 366.432 71.52 366.432 67.68V55.62C366.432 52.02 365.532 49.08 363.732 46.8C361.932 44.4 358.632 43.2 353.832 43.2V28.8H395.592L428.172 71.28V55.26C428.172 51.66 427.272 48.78 425.472 46.62C423.792 44.34 420.672 43.2 416.112 43.2V28.8H468.672V43.2C464.232 43.2 461.112 44.46 459.312 46.98C457.512 49.5 456.612 52.56 456.612 56.16V67.68C456.612 71.28 457.512 74.16 459.312 76.32C461.112 78.48 464.232 79.56 468.672 79.56V157.68H416.472V133.38C416.472 131.34 416.472 130.08 416.472 129.6C416.472 129 416.472 128.58 416.472 128.34C416.472 128.1 416.472 127.62 416.472 126.9V126.72C416.472 125.88 416.472 125.4 416.472 125.28C416.472 125.04 416.472 124.62 416.472 124.02C416.472 123.3 416.472 121.98 416.472 120.06V110.88C416.472 108.84 416.472 107.58 416.472 107.1C416.472 106.5 416.472 106.08 416.472 105.84C416.472 105.6 416.472 105.12 416.472 104.4V104.22C416.472 103.38 416.472 102.9 416.472 102.78C416.472 102.54 416.472 102.12 416.472 101.52C416.472 100.8 416.472 99.48 416.472 97.56V78.66L393.972 49.5V67.5C393.972 74.94 398.172 78.66 406.572 78.66V157.68H353.832ZM420.252 23.04C416.772 23.04 413.892 22.26 411.612 20.7C409.332 19.14 407.352 17.88 405.672 16.92C403.992 15.84 402.672 15.3 401.712 15.3C400.512 15.3 399.672 15.9 399.192 17.1C398.832 18.18 398.532 19.62 398.292 21.42H386.592C386.592 14.1 387.672 8.64 389.832 5.04C390.912 3.36 392.352 2.1 394.152 1.26001C395.952 0.420002 397.752 0 399.552 0C402.192 0 404.352 0.48 406.032 1.44C407.832 2.4 409.332 3.36 410.532 4.32C411.732 5.16 412.992 6.06 414.312 7.02C415.752 7.86 417.012 8.28 418.092 8.28C420.492 8.28 422.052 7.38 422.772 5.58C423.612 3.78 424.152 2.04001 424.392 0.360006H436.092C436.092 4.56 435.612 8.1 434.652 10.98C433.812 13.86 432.732 16.32 431.412 18.36C430.332 19.92 428.712 21.12 426.552 21.96C424.512 22.68 422.412 23.04 420.252 23.04Z" fill="white"/></g><path d="M428.172 71.2803V55.2598C428.172 51.66 427.272 48.78 425.472 46.6201C423.792 44.3401 420.672 43.2002 416.112 43.2002V28.7998H468.672V43.2002C464.232 43.2003 461.112 44.4605 459.312 46.9805C457.512 49.5004 456.612 52.5602 456.612 56.1602V67.6797C456.612 71.2797 457.512 74.1603 459.312 76.3203C461.112 78.4801 464.232 79.5595 468.672 79.5596V79.6797H416.472V78.6602L393.972 49.5V67.5C393.972 74.94 398.172 78.6602 406.572 78.6602V79.6797H353.832V79.5596C359.352 79.5596 362.832 78.54 364.272 76.5C365.712 74.46 366.432 71.5196 366.432 67.6797V55.6201C366.432 52.0201 365.532 49.0798 363.732 46.7998C361.932 44.3998 358.632 43.2002 353.832 43.2002V28.7998H395.592L428.172 71.2803ZM399.552 0C402.192 5.5484e-05 404.352 0.480483 406.032 1.44043C407.832 2.40041 409.332 3.36034 410.532 4.32031C411.732 5.16028 412.992 6.05958 414.312 7.01953C415.752 7.8594 417.012 8.28015 418.092 8.28027C420.492 8.28027 422.052 7.38007 422.772 5.58008C423.612 3.78019 424.152 2.04026 424.392 0.360352H436.093C436.093 4.5602 435.612 8.10055 434.652 10.9805C433.812 13.8603 432.732 16.3205 431.412 18.3604C430.332 19.9201 428.712 21.12 426.552 21.96C424.512 22.68 422.412 23.04 420.252 23.04C416.772 23.04 413.892 22.2601 411.612 20.7002C409.332 19.1402 407.352 17.8799 405.672 16.9199C403.992 15.8401 402.672 15.2998 401.712 15.2998C400.512 15.2999 399.672 15.9 399.192 17.0996C398.832 18.1796 398.532 19.6199 398.292 21.4199H386.592C386.592 14.1001 387.672 8.64003 389.832 5.04004C390.912 3.36004 392.352 2.09976 394.152 1.25977C395.952 0.419806 397.753 0 399.552 0Z" fill="white"/></g></g>
+          <g class="gl" style="--r:1.3deg"><rect class="gl-hit" x="227.8" y="28.8" width="115.56" height="128.88"/><g class="gl-art"><g filter="url(#filter3_i_949_19)"><path d="M227.797 157.68V133.38C227.797 131.34 227.797 130.08 227.797 129.6C227.797 129 227.797 128.58 227.797 128.34C227.797 128.1 227.797 127.62 227.797 126.9V126.72C227.797 125.88 227.797 125.4 227.797 125.28C227.797 125.04 227.797 124.62 227.797 124.02C227.797 123.3 227.797 121.98 227.797 120.06V110.88C227.797 108.84 227.797 107.58 227.797 107.1C227.797 106.5 227.797 106.08 227.797 105.84C227.797 105.6 227.797 105.12 227.797 104.4V104.22C227.797 103.38 227.797 102.9 227.797 102.78C227.797 102.54 227.797 102.12 227.797 101.52C227.797 100.8 227.797 99.4798 227.797 97.5598V79.5598C230.677 79.5598 233.077 79.2598 234.997 78.6598C237.037 77.9398 238.957 76.5598 240.757 74.5198C242.557 72.3598 244.717 69.2398 247.237 65.1598L269.017 28.7998H303.937L324.097 64.6198C326.377 68.5798 328.237 71.6398 329.677 73.7998C331.237 75.9598 332.977 77.4598 334.897 78.2998C336.937 79.1398 339.757 79.5598 343.357 79.5598V157.68H284.497V133.38C284.497 131.34 284.497 130.08 284.497 129.6C284.497 129 284.497 128.58 284.497 128.34C284.497 128.1 284.497 127.62 284.497 126.9V126.72C284.497 125.88 284.497 125.4 284.497 125.28C284.497 125.04 284.497 124.62 284.497 124.02C284.497 123.3 284.497 121.98 284.497 120.06V110.88C284.497 108.84 284.497 107.58 284.497 107.1C284.497 106.5 284.497 106.08 284.497 105.84C284.497 105.6 284.497 105.12 284.497 104.4V104.22C284.497 103.38 284.497 102.9 284.497 102.78C284.497 102.54 284.497 102.12 284.497 101.52C284.497 100.8 284.497 99.4798 284.497 97.5598V78.6598H287.377C289.297 78.6598 290.797 78.1198 291.877 77.0398C292.957 75.8398 293.497 74.3398 293.497 72.5398C293.497 70.8598 292.957 69.4798 291.877 68.3998C290.797 67.3198 289.297 66.7798 287.377 66.7798H269.377C267.217 66.7798 265.657 67.4398 264.697 68.7598C263.737 69.9598 263.257 71.2798 263.257 72.7198C263.257 74.6398 263.857 76.1398 265.057 77.2198C266.377 78.1798 267.817 78.6598 269.377 78.6598H274.057V157.68H227.797ZM269.377 56.1598H286.837L278.197 41.2198L269.377 56.1598Z" fill="white"/></g><path d="M324.096 64.6201C326.376 68.58 328.237 71.6398 329.677 73.7998C331.237 75.9598 332.977 77.4598 334.897 78.2998C336.937 79.1397 339.757 79.5596 343.357 79.5596V79.6797H284.497V78.6602H287.377C289.297 78.6602 290.797 78.1199 291.877 77.04C292.957 75.8401 293.497 74.3399 293.497 72.54C293.497 70.86 292.957 69.4794 291.877 68.3994C290.797 67.3196 289.297 66.7803 287.377 66.7803H269.377C267.217 66.7803 265.657 67.4399 264.697 68.7598C263.737 69.9597 263.257 71.2798 263.257 72.7197C263.257 74.6396 263.857 76.1397 265.056 77.2197C266.376 78.1797 267.817 78.6601 269.377 78.6602H274.056V79.6797H227.797V79.5596C230.677 79.5596 233.077 79.2601 234.997 78.6602C237.037 77.9402 238.957 76.5595 240.757 74.5195C242.557 72.3596 244.717 69.2401 247.237 65.1602L269.017 28.7998H303.937L324.096 64.6201ZM269.377 56.1602H286.837L278.197 41.2197L269.377 56.1602Z" fill="white"/></g></g>
+          <g class="gl" style="--r:-1.2deg"><rect class="gl-hit" x="93.52" y="27.72" width="102.6" height="131.04"/><g class="gl-art"><g filter="url(#filter4_i_949_19)"><path d="M127.536 158.76C119.136 158.76 111.876 156.42 105.756 151.74C99.7556 146.94 95.9156 140.82 94.2356 133.38C94.1156 132.78 93.9956 132.12 93.8756 131.4C93.7556 130.56 93.6356 129.78 93.5156 129.06C93.5156 128.22 93.5156 127.56 93.5156 127.08V126.9C93.5156 126.06 93.5156 125.58 93.5156 125.46C93.5156 125.22 93.5156 124.8 93.5156 124.2C93.5156 123.48 93.5156 122.1 93.5156 120.06V110.88C93.5156 108.84 93.5156 107.58 93.5156 107.1C93.5156 106.5 93.5156 106.08 93.5156 105.84C93.5156 105.6 93.5156 105.12 93.5156 104.4V104.22C93.5156 103.38 93.5156 102.9 93.5156 102.78C93.5156 102.54 93.5156 102.12 93.5156 101.52C93.5156 100.8 93.5156 99.4797 93.5156 97.5597V61.1997C93.5156 54.7197 94.9556 48.9597 97.8356 43.9197C100.836 38.8797 104.916 34.9197 110.076 32.0397C115.236 29.1597 121.056 27.7197 127.536 27.7197H162.096C168.696 27.7197 174.516 29.1597 179.556 32.0397C184.716 34.9197 188.736 38.8797 191.616 43.9197C194.616 48.9597 196.116 54.7197 196.116 61.1997V97.5597C196.116 99.4797 196.116 100.8 196.116 101.52C196.116 102.12 196.116 102.54 196.116 102.78C196.116 102.9 196.116 103.38 196.116 104.22V104.4C196.116 105.12 196.116 105.6 196.116 105.84C196.116 106.08 196.116 106.5 196.116 107.1C196.116 107.58 196.116 108.84 196.116 110.88V120.06C196.116 121.98 196.116 123.3 196.116 124.02C196.116 124.62 196.116 125.04 196.116 125.28C196.116 125.4 196.116 125.88 196.116 126.72V126.9C196.116 127.62 196.056 128.4 195.936 129.24C195.936 130.08 195.876 130.86 195.756 131.58C195.636 132.18 195.516 132.78 195.396 133.38C193.716 140.82 189.816 146.94 183.696 151.74C177.696 156.42 170.496 158.76 162.096 158.76H127.536ZM130.776 77.0397C131.376 73.6797 132.996 70.9197 135.636 68.7597C138.276 66.4797 141.336 65.3397 144.816 65.3397C148.296 65.3397 151.356 66.4797 153.996 68.7597C156.636 70.9197 158.256 73.6797 158.856 77.0397C161.016 75.2397 162.096 72.1197 162.096 67.6797V55.2597C162.096 51.6597 161.196 48.7797 159.396 46.6197C157.716 44.3397 154.596 43.1997 150.036 43.1997H139.596C135.156 43.1997 132.036 44.3397 130.236 46.6197C128.436 48.7797 127.536 51.6597 127.536 55.2597V67.6797C127.536 72.1197 128.616 75.2397 130.776 77.0397Z" fill="#FFE23C"/></g><path d="M162.096 27.7197C164.338 27.7197 166.49 27.8864 168.552 28.2188V41.6797H121.552V28.1572C123.479 27.8658 125.474 27.7197 127.535 27.7197H162.096Z" fill="#FFE23C"/></g></g>
+          <g class="gl" style="--r:1deg"><rect class="gl-hit" x="0" y="28.8" width="83.16" height="128.88"/><g class="gl-art"><g filter="url(#filter5_i_949_19)"><path d="M0 157.68V133.38C0 131.34 0 130.08 0 129.6C0 129 0 128.58 0 128.34C0 128.1 0 127.62 0 126.9V126.72C0 125.88 0 125.4 0 125.28C0 125.04 0 124.62 0 124.02C0 123.3 0 121.98 0 120.06V110.88C0 108.84 0 107.58 0 107.1C0 106.5 0 106.08 0 105.84C0 105.6 0 105.12 0 104.4V104.22C0 103.38 0 102.9 0 102.78C0 102.54 0 102.12 0 101.52C0 100.8 0 99.4798 0 97.5598V79.5598H14.58C19.14 79.5598 22.26 78.4798 23.94 76.3198C25.74 74.1598 26.64 71.2798 26.64 67.6798V56.6998H8.46V44.0998C11.94 44.0998 15 43.3198 17.64 41.7598C20.4 40.0798 22.56 38.0398 24.12 35.6398C25.8 33.2398 26.64 30.9598 26.64 28.7998H58.86V67.6798C58.86 71.2798 59.76 74.1598 61.56 76.3198C63.36 78.4798 66.48 79.5598 70.92 79.5598H83.16V97.5598C83.16 99.4798 83.16 100.8 83.16 101.52C83.16 102.12 83.16 102.54 83.16 102.78C83.16 102.9 83.16 103.38 83.16 104.22V104.4C83.16 105.12 83.16 105.6 83.16 105.84C83.16 106.08 83.16 106.5 83.16 107.1C83.16 107.58 83.16 108.84 83.16 110.88V120.06C83.16 121.98 83.16 123.3 83.16 124.02C83.16 124.62 83.16 125.04 83.16 125.28C83.16 125.4 83.16 125.88 83.16 126.72V126.9C83.16 127.62 83.16 128.1 83.16 128.34C83.16 128.58 83.16 129 83.16 129.6C83.16 130.08 83.16 131.34 83.16 133.38V157.68H0Z" fill="#FFE23C"/></g></g></g>
+          <g class="gl" style="--r:-1.1deg"><rect class="gl-hit" x="1.2" y="173.24" width="44.48" height="64.44"/><g class="gl-art"><g filter="url(#filter6_i_949_19)"><path d="M46.9189 186.47H38.8184C38.8184 184.67 38.3687 183.229 37.4688 182.149C36.6288 181.009 35.0689 180.44 32.7891 180.439H22.1689V186.199H32.7891V192.499H22.1689C22.1689 194.299 22.6186 195.709 23.5186 196.729C24.4186 197.689 25.9792 198.169 28.1992 198.169H38.459V237.68H1.19824V198.619C3.47824 198.619 5.03891 198.079 5.87891 196.999C6.77871 195.919 7.22844 194.479 7.22852 192.68V186.919C7.22846 185.119 6.77885 183.589 5.87891 182.329C4.9789 181.069 3.41823 180.439 1.19824 180.439V173.239H46.9189V186.47Z" fill="white"/></g><path d="M46.9187 186.47H38.8181C38.8181 184.67 38.3685 183.229 37.4685 182.149C36.6285 181.01 35.0686 180.44 32.7888 180.439H22.1687V186.199H32.7888V192.499H22.1687C22.1687 194.299 22.6184 195.71 23.5183 196.729C23.8943 197.131 24.3864 197.446 24.9929 197.68H5.15308C5.43589 197.483 5.67804 197.257 5.87866 196.999C6.77847 195.919 7.2282 194.479 7.22827 192.68V186.919C7.22822 185.119 6.77861 183.589 5.87866 182.329C4.97865 181.069 3.41792 180.439 1.198 180.439V173.239H46.9187V186.47Z" fill="white"/></g></g>
+          <g class="gl" style="--r:1.4deg"><rect class="gl-hit" x="45.68" y="173.24" width="56.54" height="64.44"/><g class="gl-art"><g filter="url(#filter6_i_949_19)"><path d="M92.5908 191.149C93.7308 193.129 94.6609 194.659 95.3809 195.739C96.1609 196.819 97.0312 197.569 97.9912 197.989C99.0112 198.409 100.421 198.619 102.221 198.619V237.68H72.791V198.169H74.2305C75.1903 198.169 75.9405 197.899 76.4805 197.359C77.0204 196.759 77.291 196.009 77.291 195.109C77.291 194.269 77.0205 193.579 76.4805 193.039C75.9405 192.499 75.1903 192.229 74.2305 192.229H65.2305C64.1507 192.23 63.3706 192.56 62.8906 193.22C62.4109 193.82 62.1709 194.479 62.1709 195.199C62.1709 196.159 62.4713 196.909 63.0713 197.449C63.7311 197.929 64.4507 198.169 65.2305 198.169H67.5713V237.68H44.4414V198.619C45.8812 198.619 47.0811 198.469 48.041 198.169C49.0609 197.809 50.021 197.119 50.9209 196.1C51.8209 195.02 52.9011 193.459 54.1611 191.419L65.0508 173.239H82.5107L92.5908 191.149ZM65.2305 186.919H73.9609L69.6406 179.449L65.2305 186.919Z" fill="white"/></g><path d="M92.5906 191.149C93.7305 193.129 94.6606 194.659 95.3806 195.739C95.9966 196.592 96.6698 197.238 97.3982 197.68H76.0876C76.2289 197.586 76.3599 197.48 76.4802 197.359C77.0202 196.759 77.2907 196.009 77.2908 195.109C77.2908 194.269 77.0202 193.579 76.4802 193.039C75.9403 192.499 75.19 192.229 74.2302 192.229H65.2302C64.1506 192.23 63.3703 192.56 62.8904 193.22C62.4107 193.82 62.1707 194.479 62.1707 195.199C62.1707 196.159 62.4711 196.909 63.071 197.449C63.1881 197.534 63.3086 197.61 63.4294 197.68H49.0681C49.7111 197.295 50.3295 196.77 50.9207 196.1C51.8206 195.02 52.9009 193.459 54.1609 191.419L65.0505 173.239H82.5105L92.5906 191.149ZM65.2302 186.919H73.9607L69.6404 179.449L65.2302 186.919Z" fill="white"/></g></g>
+          <g class="gl" style="--r:-1deg"><rect class="gl-hit" x="107.46" y="173.24" width="57.78" height="64.98"/><g class="gl-art"><g filter="url(#filter6_i_949_19)"><path d="M146.248 173.239C147.148 173.239 148.228 173.299 149.488 173.419C150.808 173.539 152.098 173.869 153.358 174.409C154.678 174.889 155.759 175.669 156.599 176.749C157.439 177.769 157.858 179.239 157.858 181.159C157.858 183.199 157.318 184.759 156.238 185.839C155.218 186.859 153.898 187.579 152.278 187.999C150.718 188.359 149.129 188.539 147.509 188.539H146.788V189.439C149.488 189.439 151.469 189.77 152.729 190.43C153.988 191.03 154.889 191.78 155.429 192.68C156.029 193.579 156.599 194.479 157.139 195.379C157.739 196.279 158.608 197.06 159.748 197.72C160.888 198.32 162.718 198.619 165.238 198.619V237.68C164.338 237.8 162.748 237.919 160.469 238.039C158.249 238.159 155.878 238.22 153.358 238.22C149.398 238.22 146.369 237.739 144.269 236.779C142.229 235.819 140.818 234.499 140.038 232.819C139.318 231.079 138.959 229.13 138.959 226.97V198.619C138.959 196.639 138.478 195.05 137.519 193.85C136.619 192.65 135.148 192.049 133.108 192.049H127.709C127.709 194.149 128.159 195.709 129.059 196.729C129.959 197.689 131.548 198.169 133.828 198.169V237.68H107.459V198.619C109.739 198.619 111.299 198.169 112.139 197.27C113.039 196.31 113.488 194.929 113.488 193.129V186.47C113.488 184.67 113.039 183.229 112.139 182.149C111.299 181.009 109.739 180.44 107.459 180.439V173.239H146.248ZM127.709 186.289H137.158C138.298 186.289 139.198 186.049 139.858 185.569C140.518 185.029 140.849 184.279 140.849 183.319C140.849 182.479 140.548 181.789 139.948 181.249C139.348 180.709 138.418 180.439 137.158 180.439H127.709V186.289Z" fill="white"/></g><path d="M146.248 173.239C147.148 173.239 148.228 173.299 149.488 173.419C150.808 173.539 152.098 173.869 153.358 174.409C154.678 174.889 155.758 175.669 156.598 176.749C157.438 177.769 157.858 179.239 157.858 181.159C157.858 183.199 157.318 184.759 156.238 185.839C155.218 186.859 153.898 187.579 152.278 187.999C150.718 188.359 149.128 188.539 147.509 188.539H146.788V189.439C149.488 189.439 151.468 189.77 152.728 190.43C153.988 191.03 154.888 191.78 155.428 192.68C156.028 193.579 156.599 194.479 157.138 195.379C157.727 196.261 158.575 197.028 159.682 197.68H138.919C138.787 196.13 138.321 194.853 137.518 193.85C136.618 192.65 135.148 192.049 133.108 192.049H127.709C127.709 194.149 128.158 195.709 129.058 196.729C129.434 197.131 129.932 197.446 130.549 197.68H111.659C111.838 197.555 111.999 197.419 112.138 197.27C113.038 196.31 113.488 194.929 113.488 193.129V186.47C113.488 184.67 113.038 183.229 112.138 182.149C111.298 181.01 109.738 180.44 107.459 180.439V173.239H146.248ZM127.709 186.289H137.158C138.298 186.289 139.198 186.049 139.858 185.569C140.518 185.029 140.848 184.279 140.848 183.319C140.848 182.479 140.548 181.789 139.948 181.249C139.348 180.709 138.418 180.439 137.158 180.439H127.709V186.289Z" fill="white"/></g></g>
+          <g class="gl" style="--r:1.2deg"><rect class="gl-hit" x="170.39" y="173.24" width="63.9" height="64.44"/><g class="gl-art"><g filter="url(#filter6_i_949_19)"><path d="M202.338 185.119L213.769 173.239H234.288V180.709C232.068 180.709 230.508 181.279 229.608 182.419C228.708 183.499 228.258 184.939 228.258 186.739V193.129C228.258 194.929 228.708 196.31 229.608 197.27C230.508 198.169 232.068 198.619 234.288 198.619V237.68H205.038V198.169H208.008C210.288 198.169 211.848 197.689 212.688 196.729C213.588 195.769 214.038 194.389 214.038 192.589V183.409L202.338 195.199L190.639 183.409V192.589C190.639 194.389 191.088 195.769 191.988 196.729C192.888 197.689 194.448 198.169 196.668 198.169H199.639V237.68H170.389V198.619C172.668 198.619 174.228 198.169 175.068 197.27C175.968 196.31 176.418 194.929 176.418 193.129V186.739C176.418 184.939 175.968 183.499 175.068 182.419C174.228 181.279 172.668 180.709 170.389 180.709V173.239H190.908L202.338 185.119Z" fill="white"/></g><path d="M202.338 185.119L213.768 173.239H234.288V180.709C232.068 180.709 230.508 181.279 229.608 182.419C228.708 183.499 228.258 184.939 228.258 186.739V193.129C228.258 194.929 228.708 196.31 229.608 197.27C229.758 197.419 229.927 197.555 230.113 197.68H211.258C211.86 197.446 212.337 197.131 212.688 196.729C213.588 195.769 214.038 194.389 214.038 192.589V183.409L202.338 195.199L190.638 183.409V192.589C190.638 194.389 191.088 195.769 191.988 196.729C192.364 197.131 192.856 197.446 193.463 197.68H174.589C174.768 197.555 174.928 197.419 175.068 197.27C175.968 196.31 176.418 194.929 176.418 193.129V186.739C176.418 184.939 175.968 183.499 175.068 182.419C174.228 181.279 172.668 180.709 170.388 180.709V173.239H190.908L202.338 185.119Z" fill="white"/></g></g>
+          <g class="gl" style="--r:-1.3deg"><rect class="gl-hit" x="239.47" y="173.24" width="46.62" height="64.44"/><g class="gl-art"><g filter="url(#filter6_i_949_19)"><path d="M285.55 186.47H277.45C277.45 184.67 277 183.229 276.101 182.149C275.261 181.009 273.7 180.439 271.42 180.439H260.53V185.93H271.061V192.229H260.53V198.169H271.96C274.24 198.169 275.801 197.719 276.641 196.819C277.54 195.859 277.99 194.479 277.99 192.68H286.09V237.68H239.561V198.619C241.84 198.619 243.4 198.079 244.24 196.999C245.14 195.919 245.59 194.479 245.59 192.68V186.919C245.59 185.119 245.14 183.589 244.24 182.329C243.34 181.069 241.75 180.44 239.471 180.439V173.239H285.55V186.47Z" fill="white"/></g><path d="M285.55 186.47H277.45C277.45 184.67 277 183.229 276.1 182.149C275.26 181.009 273.7 180.439 271.42 180.439H260.53V185.93H271.06V192.229H260.53V197.68H243.514C243.797 197.483 244.039 197.257 244.24 196.999C245.14 195.919 245.59 194.479 245.59 192.68V186.919C245.59 185.119 245.14 183.589 244.24 182.329C243.34 181.069 241.75 180.44 239.47 180.439V173.239H285.55V186.47ZM286.09 197.68H275.291C275.855 197.464 276.305 197.178 276.64 196.819C277.54 195.859 277.99 194.479 277.99 192.68H286.09V197.68Z" fill="white"/></g></g>
+          <g class="gl" style="--r:0.9deg"><rect class="gl-hit" x="291.32" y="173.24" width="57.78" height="64.44"/><g class="gl-art"><g filter="url(#filter6_i_949_19)"><path d="M339.476 191.149C340.616 193.129 341.546 194.659 342.266 195.739C343.046 196.819 343.915 197.569 344.875 197.989C345.895 198.409 347.305 198.619 349.105 198.619V237.68H319.676V198.169H321.115C322.075 198.169 322.825 197.899 323.365 197.359C323.905 196.759 324.176 196.009 324.176 195.109C324.176 194.269 323.905 193.579 323.365 193.039C322.825 192.499 322.075 192.229 321.115 192.229H312.115C311.035 192.23 310.255 192.56 309.775 193.22C309.296 193.82 309.056 194.479 309.056 195.199C309.056 196.159 309.355 196.909 309.955 197.449C310.615 197.929 311.335 198.169 312.115 198.169H314.455V237.68H291.325V198.619C292.765 198.619 293.966 198.469 294.926 198.169C295.946 197.809 296.906 197.119 297.806 196.1C298.706 195.02 299.786 193.459 301.046 191.419L311.936 173.239H329.396L339.476 191.149ZM312.115 186.919H320.846L316.525 179.449L312.115 186.919Z" fill="white"/></g><path d="M339.475 191.149C340.615 193.129 341.545 194.659 342.265 195.739C342.881 196.592 343.554 197.238 344.282 197.68H322.972C323.114 197.586 323.245 197.48 323.365 197.359C323.905 196.759 324.176 196.009 324.176 195.109C324.176 194.269 323.905 193.579 323.365 193.039C322.825 192.499 322.075 192.229 321.115 192.229H312.115C311.035 192.23 310.255 192.56 309.775 193.22C309.295 193.82 309.055 194.479 309.055 195.199C309.055 196.159 309.355 196.909 309.955 197.449C310.072 197.535 310.193 197.61 310.314 197.68H295.953C296.596 197.295 297.214 196.77 297.805 196.1C298.705 195.02 299.786 193.459 301.046 191.419L311.935 173.239H329.395L339.475 191.149ZM312.115 186.919H320.845L316.525 179.449L312.115 186.919Z" fill="white"/></g></g>
+          <g class="gl" style="--r:-1.2deg"><rect class="gl-hit" x="354.34" y="173.24" width="57.42" height="64.44"/><g class="gl-art"><g filter="url(#filter6_i_949_19)"><path d="M391.513 194.479V186.47C391.513 184.67 391.063 183.229 390.163 182.149C389.323 181.009 387.763 180.44 385.483 180.439V173.239H411.763V180.439C409.543 180.44 407.983 181.069 407.083 182.329C406.183 183.589 405.733 185.119 405.733 186.919V192.68C405.733 194.479 406.183 195.919 407.083 196.999C407.983 198.079 409.543 198.619 411.763 198.619V237.68H385.663V198.169L374.413 183.589V192.589C374.413 196.309 376.513 198.169 380.713 198.169V237.68H354.343V198.619C357.103 198.619 358.843 198.109 359.563 197.089C360.283 196.069 360.643 194.599 360.643 192.68V186.649C360.643 184.849 360.193 183.379 359.293 182.239C358.393 181.039 356.743 180.439 354.343 180.439V173.239H375.223L391.513 194.479Z" fill="white"/></g><path d="M391.512 194.479V186.47C391.512 184.67 391.063 183.229 390.163 182.149C389.323 181.01 387.763 180.44 385.483 180.439V173.239H411.762V180.439C409.543 180.44 407.983 181.069 407.083 182.329C406.183 183.589 405.733 185.119 405.733 186.919V192.68C405.733 194.479 406.183 195.919 407.083 196.999C407.298 197.257 407.551 197.483 407.842 197.68H385.285L374.413 183.589V192.589C374.413 195.209 375.456 196.905 377.54 197.68H358.946C359.2 197.506 359.406 197.311 359.563 197.089C360.283 196.069 360.642 194.599 360.642 192.68V186.649C360.642 184.849 360.193 183.379 359.293 182.239C358.393 181.039 356.742 180.439 354.343 180.439V173.239H375.222L391.512 194.479Z" fill="white"/></g></g>
+          <g class="gl" style="--r:1.1deg"><rect class="gl-hit" x="417.01" y="173.24" width="50.85" height="64.44"/><g class="gl-art"><g filter="url(#filter6_i_949_19)"><path d="M450.849 173.239C454.149 173.239 457.059 173.959 459.579 175.399C462.159 176.839 464.169 178.819 465.609 181.339C467.109 183.859 467.859 186.739 467.859 189.979V222.289C467.859 222.649 467.829 223.039 467.77 223.459C467.77 223.879 467.739 224.269 467.679 224.629C467.619 224.929 467.559 225.229 467.499 225.529C466.659 229.249 464.709 232.219 461.649 234.439C458.649 236.599 455.049 237.68 450.849 237.68H417.009V198.619C419.289 198.619 420.849 198.17 421.689 197.27C422.589 196.31 423.039 194.929 423.039 193.129V186.47C423.039 184.67 422.589 183.229 421.689 182.149C420.849 181.009 419.289 180.439 417.009 180.439V173.239H450.849ZM438.159 198.169H444.459C446.739 198.169 448.329 197.719 449.229 196.819C450.129 195.919 450.579 194.359 450.579 192.14V186.47C450.579 184.19 450.129 182.629 449.229 181.789C448.329 180.889 446.739 180.439 444.459 180.439H438.159V198.169Z" fill="white"/></g><path d="M450.848 173.239C454.148 173.239 457.059 173.959 459.579 175.399C461.425 176.43 462.978 177.737 464.24 179.32L417.009 180.145V173.239H450.848Z" fill="white"/></g></g>
+          <g class="gl" style="--r:-1deg"><rect class="gl-hit" x="473.08" y="172.7" width="51.84" height="65.52"/><g class="gl-art"><g filter="url(#filter6_i_949_19)"><path d="M507.913 172.699C511.213 172.699 514.124 173.419 516.644 174.859C519.223 176.299 521.233 178.279 522.673 180.799C524.173 183.319 524.923 186.199 524.923 189.439V222.289C524.923 222.649 524.893 223.039 524.833 223.459C524.833 223.879 524.803 224.269 524.743 224.629C524.683 224.929 524.623 225.229 524.563 225.529C523.723 229.249 521.773 232.309 518.713 234.709C515.713 237.049 512.113 238.219 507.913 238.219H490.094C485.894 238.219 482.263 237.049 479.203 234.709C476.203 232.309 474.283 229.249 473.443 225.529C473.383 225.229 473.324 224.899 473.264 224.539C473.204 224.119 473.143 223.729 473.083 223.369V189.439C473.083 186.26 473.803 183.41 475.243 180.89C476.743 178.37 478.783 176.389 481.363 174.949C483.943 173.449 486.854 172.699 490.094 172.699H507.913ZM497.203 180.439C494.983 180.439 493.423 181.009 492.523 182.149C491.684 183.229 491.264 184.669 491.264 186.469V193.399C491.264 194.899 491.533 196.069 492.073 196.909C492.673 197.749 493.573 198.169 494.773 198.169C495.553 198.169 496.333 197.84 497.113 197.18C497.953 196.46 498.464 194.929 498.644 192.589H499.363C499.543 194.929 500.024 196.46 500.804 197.18C501.644 197.839 502.454 198.169 503.233 198.169C504.433 198.169 505.304 197.749 505.844 196.909C506.444 196.069 506.743 194.899 506.743 193.399V186.469C506.743 184.669 506.323 183.229 505.483 182.149C504.643 181.009 503.083 180.44 500.804 180.439H497.203Z" fill="white"/></g><path d="M507.913 172.699C511.213 172.699 514.123 173.419 516.643 174.859C518.311 175.79 519.738 176.948 520.929 178.33L476.465 179.106C477.793 177.416 479.426 176.03 481.363 174.949C483.943 173.449 486.854 172.699 490.094 172.699H507.913Z" fill="white"/></g></g>
+          <g class="gl" style="--r:1.3deg"><rect class="gl-hit" x="529.11" y="153.4" width="93" height="91.33"/><g class="gl-art"><g filter="url(#filter7_i_949_19)"><path d="M536.008 137.93C540.508 138.08 545.907 137.33 550.407 137.63C551.607 139.28 552.807 140.93 554.157 142.88L562.407 154.58C563.757 156.53 565.107 158.18 566.157 159.83C566.157 159.83 570.508 145.88 572.758 138.53H622.107C622.059 138.666 606.647 182.06 599.758 201.38C605.758 213.98 614.608 231.98 620.308 244.58L601.857 244.73H601.708L601.558 244.58C594.508 233.63 584.457 217.73 577.407 206.78C575.157 219.38 573.058 231.83 570.808 244.28C561.358 244.28 537.057 244.43 529.107 243.83C536.157 222.53 543.208 201.38 550.258 180.23L535.107 141.38L534.808 140.78L536.008 137.93Z" fill="#FFE23C"/></g><path d="M536.008 137.93C540.508 138.08 545.907 137.33 550.407 137.63C551.607 139.28 552.807 140.93 554.157 142.88L562.407 154.58C563.757 156.53 565.107 158.18 566.157 159.83C566.157 159.83 570.508 145.88 572.758 138.53H622.107C622.057 138.671 606.647 182.061 599.758 201.38C600.015 201.92 600.279 202.469 600.546 203.028L596.052 204.68L583.552 177.68H549.263L535.107 141.38L534.808 140.78L536.008 137.93Z" fill="#FFE23C"/></g></g>
+          <g class="gl" style="--r:-1.1deg"><rect class="gl-hit" x="628.12" y="140.29" width="97.2" height="103.54"/><g class="gl-art"><g filter="url(#filter7_i_949_19)"><path d="M628.115 143.18C651.965 133.88 699.815 132.53 715.564 156.08C725.314 170.63 719.165 189.68 706.865 200.63C695.015 211.28 678.665 216.529 662.915 219.529C661.415 219.829 656.165 221.179 654.515 221.479C653.015 230.029 650.615 243.83 650.615 243.83H628.265C628.115 242.33 628.265 146.33 628.115 143.18ZM664.715 164.479C663.515 156.08 654.365 154.43 647.615 157.279V191.18C657.215 186.53 666.215 175.879 664.715 164.479Z" fill="#FFE23C"/></g><path d="M628.115 143.18C638.795 139.016 654.285 136.448 669.552 136.993V177.68L659.622 181.327C663.314 176.462 665.517 170.578 664.715 164.479C663.515 156.08 654.365 154.43 647.615 157.279V185.737L628.188 192.874C628.189 168.709 628.189 144.729 628.115 143.18Z" fill="#FFE23C"/></g></g>
+          <defs>
+<filter id="filter0_i_949_19" x="593.426" y="23.7197" width="101.7" height="135.04" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+<feOffset dy="-45"/>
+<feGaussianBlur stdDeviation="2"/>
+<feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1"/>
+<feColorMatrix type="matrix" values="0 0 0 0 0.0532544 0 0 0 0 0.180473 0 0 0 0 0.230769 0 0 0 0.25 0"/>
+<feBlend mode="normal" in2="shape" result="effect1_innerShadow_949_19"/>
+</filter>
+<filter id="filter1_i_949_19" x="479.164" y="23.7197" width="103.68" height="135.04" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+<feOffset dy="-45"/>
+<feGaussianBlur stdDeviation="2"/>
+<feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1"/>
+<feColorMatrix type="matrix" values="0 0 0 0 0.0532544 0 0 0 0 0.180473 0 0 0 0 0.230769 0 0 0 0.25 0"/>
+<feBlend mode="normal" in2="shape" result="effect1_innerShadow_949_19"/>
+</filter>
+<filter id="filter2_i_949_19" x="353.832" y="-4" width="114.84" height="161.68" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+<feOffset dy="-45"/>
+<feGaussianBlur stdDeviation="2"/>
+<feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1"/>
+<feColorMatrix type="matrix" values="0 0 0 0 0.0532544 0 0 0 0 0.180473 0 0 0 0 0.230769 0 0 0 0.25 0"/>
+<feBlend mode="normal" in2="shape" result="effect1_innerShadow_949_19"/>
+</filter>
+<filter id="filter3_i_949_19" x="227.797" y="24.7998" width="115.56" height="132.88" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+<feOffset dy="-45"/>
+<feGaussianBlur stdDeviation="2"/>
+<feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1"/>
+<feColorMatrix type="matrix" values="0 0 0 0 0.0532544 0 0 0 0 0.180473 0 0 0 0 0.230769 0 0 0 0.25 0"/>
+<feBlend mode="normal" in2="shape" result="effect1_innerShadow_949_19"/>
+</filter>
+<filter id="filter4_i_949_19" x="93.5156" y="23.7197" width="102.6" height="135.04" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+<feOffset dy="-45"/>
+<feGaussianBlur stdDeviation="2"/>
+<feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1"/>
+<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.24 0"/>
+<feBlend mode="normal" in2="shape" result="effect1_innerShadow_949_19"/>
+</filter>
+<filter id="filter5_i_949_19" x="0" y="24.7998" width="83.1599" height="132.88" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+<feOffset dy="-45"/>
+<feGaussianBlur stdDeviation="2"/>
+<feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1"/>
+<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.24 0"/>
+<feBlend mode="normal" in2="shape" result="effect1_innerShadow_949_19"/>
+</filter>
+<filter id="filter6_i_949_19" x="1.19824" y="168.699" width="523.725" height="69.5205" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+<feOffset dy="-25"/>
+<feGaussianBlur stdDeviation="2"/>
+<feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1"/>
+<feColorMatrix type="matrix" values="0 0 0 0 0.054902 0 0 0 0 0.180392 0 0 0 0 0.231373 0 0 0 0.25 0"/>
+<feBlend mode="normal" in2="shape" result="effect1_innerShadow_949_19"/>
+</filter>
+<filter id="filter7_i_949_19" x="525.107" y="132.918" width="195.271" height="111.812" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+<feOffset dx="-7" dy="-22"/>
+<feGaussianBlur stdDeviation="2"/>
+<feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1"/>
+<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+<feBlend mode="normal" in2="shape" result="effect1_innerShadow_949_19"/>
+</filter>
+</defs>
+        </svg>
+        <span class="sr-only" data-i18n-lang="es">10 años farmeando XP</span>
+        <span class="sr-only" data-i18n-lang="en">10 years farming XP</span>
+      </h1>
+      <!-- La invitación a bajar vive aquí, junto a las letras: misma
+           velocidad de scroll y de cursor, así que baja y queda oculta
+           debajo de las capas exactamente igual que el título, en vez
+           de desvanecerse. -->
+      <div class="hero-fg" data-scroll="0.40" data-mouse="16">
+        <a href="#oyyo-zoom-wrap" class="scroll-hint">
+          <span data-i18n-lang="es">Conoce nuestro próximo lanzamiento</span>
+          <span data-i18n-lang="en">Discover our next release</span>
+          <span class="chevs" aria-hidden="true">
+            <svg viewBox="0 0 13 7" fill="none"><path d="M1 1l5.27 4.64L11.55 1" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            <svg viewBox="0 0 13 7" fill="none"><path d="M1 1l5.27 4.64L11.55 1" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            <svg viewBox="0 0 13 7" fill="none"><path d="M1 1l5.27 4.64L11.55 1" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </span>
+        </a>
+      </div>
+    </div>
+
+    <div class="px-stage px-stage--front" aria-hidden="true">
+      <div class="px-layer px-n3"    data-scroll="-0.07"  data-mouse="11"><img src="assets/parallax/nivel3.png" alt="" width="1261" height="754"></div>
+      <div class="px-layer px-n2"    data-scroll="-0.28"  data-mouse="16"><img src="assets/parallax/nivel2.png" alt="" width="1440" height="944"></div>
+      <div class="px-layer px-n1"    data-scroll="-0.36"  data-mouse="20"><img src="assets/parallax/nivel1.png" alt="" width="1440" height="645"></div>
+      <div class="px-layer px-fade"  data-scroll="-0.36"  data-mouse="20"></div>
+    </div>
+    <div class="px-particles" data-scroll="-0.48" data-mouse="30" aria-hidden="true" id="hero-sparks"></div>
+  </section>
+
+  <!-- ============ OYYO — ZOOM SCROLL ============ -->
+  <section id="oyyo-zoom-wrap" aria-label="OYYO">
+    <div class="oyyo-sticky">
+      <div class="oyyo-card" id="oyyo-card">
+        <!-- Recreación de "Seccion 2.svg" (1440x815): mismo arte (PNG 2x
+             original), mismos degradados y cada elemento en su posición
+             exacta del archivo, medida en px del frame con --u. El texto es
+             real (no trazos) para que funcione ES/EN y sea accesible. -->
+        <!-- Video en bucle, mudo y sin controles (estilo "gif"): arranca y
+             se pausa solo mientras la sección está a la vista (ver script
+             s2Video). El póster es el arte estático, así que se ve algo
+             de inmediato mientras el video carga o si el navegador no
+             puede reproducirlo. -->
+        <!-- Póster: versión liviana (66 KB) del arte original, no el PNG
+             de 3.4 MB — ese sigue existiendo solo para la descarga del
+             wallpaper, pero incrustarlo también como póster casi agota
+             el límite de peso de los Artifacts. -->
+        <video class="s2-art" autoplay muted loop playsinline preload="metadata"
+               poster="assets/parallax/seccion2-poster.jpg" aria-hidden="true" width="848" height="480">
+          <source src="assets/video/oyyo-trailer.mp4" type="video/mp4">
+        </video>
+        <div class="s2-scrim s2-scrim-v" aria-hidden="true"></div>
+        <div class="s2-scrim s2-scrim-h" aria-hidden="true"></div>
+        <p class="s2-badge">
+          <span class="s2-badge-a"><span data-i18n-lang="es">Muy</span><span data-i18n-lang="en">Coming</span></span>
+          <span class="s2-badge-b"><span data-i18n-lang="es">Pronto</span><span data-i18n-lang="en">Soon</span></span>
+        </p>
+        <h2 class="s2-wordmark"><img src="assets/vector/oyyo-s2.svg" alt="OYYO" width="207" height="59"></h2>
+          <p class="s2-desc">
+            <span data-i18n-lang="es">Oyyo es una pequeña figura geométrica con un único propósito en la existencia: alcanzar el orden perfecto. A diferencia de un héroe clásico, Oyyo es impulsado por la necesidad compulsiva de encajar. En un mundo construido por pasillos abstractos y plataformas suspendidas en el vacío, el personaje busca sin descanso su "espacio ideal", un hueco diseñado con sus dimensiones precisas.</span>
+            <span data-i18n-lang="en">Oyyo is a small geometric figure with a single purpose in existence: reaching perfect order. Unlike a classic hero, Oyyo is driven by the compulsive need to fit. In a world built from abstract corridors and platforms suspended in the void, it endlessly seeks its "ideal space" — a gap built to its exact dimensions.</span>
+          </p>
+        <div class="s2-actions">
+          <a href="#waitlist" class="s2-btn s2-btn-primary magnetic">
+            <span data-i18n-lang="es">Quiero jugarlo</span>
+            <span data-i18n-lang="en">I want to play it</span>
+          </a>
+          <!-- WALLPAPER: por ahora descarga el arte de esta sección (PNG 2x).
+               Ruta con "./" a propósito: build-artifact no la incrusta (en los
+               Artifacts las descargas están bloqueadas de todos modos). -->
+          <a href="./assets/parallax/seccion2.png" download="OYYO-wallpaper.png" class="s2-btn s2-btn-secondary magnetic">
+            <span data-i18n-lang="es">Descargar Wallpaper</span>
+            <span data-i18n-lang="en">Download wallpaper</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SECCIÓN 3 — LISTA DE ESPERA ============ -->
+  <section id="waitlist" aria-labelledby="wl-title">
+    <!-- Recreación de "seccion-3-correo.svg" (1280x330): arte PNG original
+         del archivo, su degradado y cada pieza en su coordenada exacta. -->
+    <div class="wl-card reveal">
+      <img class="wl-art" src="assets/parallax/correo.png" alt="" width="1487" height="1058" decoding="async" loading="lazy">
+      <div class="wl-scrim" aria-hidden="true"></div>
+      <h2 class="wl-title" id="wl-title">
+        <span data-i18n-lang="es">Sé de los primeros en</span><span data-i18n-lang="en">Be among the first to play</span>
+        <span class="sr-only"><span data-i18n-lang="es">jugar OYYO</span><span data-i18n-lang="en">OYYO</span></span>
+      </h2>
+      <div class="wl-words" aria-hidden="true">
+        <img class="wl-word wl-jugar" data-i18n-lang="es" src="assets/vector/s3-jugar.svg" alt="" width="196" height="44">
+        <img class="wl-word wl-oyyo" src="assets/vector/s3-oyyo.svg" alt="" width="155" height="44">
+      </div>
+      <p class="wl-sub">
+        <span data-i18n-lang="es">Sin spam. Solo un aviso cuando OYYO esté listo para jugar.</span>
+        <span data-i18n-lang="en">No spam. Just a heads-up when OYYO is ready to play.</span>
+      </p>
+      <p class="wl-count" id="waitlist-count"></p>
+      <form class="wl-form" id="waitlist-form" novalidate>
+        <label for="waitlist-email" class="sr-only">
+          <span data-i18n-lang="es">Correo electrónico</span>
+          <span data-i18n-lang="en">Email address</span>
+        </label>
+        <input id="waitlist-email" class="wl-input" name="email" type="email" required placeholder="tu@correo.com" autocomplete="email" inputmode="email" spellcheck="false" aria-describedby="waitlist-status">
+        <input class="wl-hp" type="text" name="website" tabindex="-1" autocomplete="off" aria-hidden="true">
+        <button type="submit" class="wl-btn magnetic">
+          <span data-i18n-lang="es">Notificarme</span>
+          <span data-i18n-lang="en">Notify me</span>
+        </button>
+        <p class="wl-consent">
+          <input type="checkbox" id="waitlist-consent" name="consent" value="yes" required aria-describedby="waitlist-status">
+          <label for="waitlist-consent">
+            <span data-i18n-lang="es">Acepto la <a href="privacidad.html" data-legal="privacidad" target="_blank" rel="noopener">Política de privacidad</a> y autorizo a Biinyu a escribirme sobre el lanzamiento de OYYO.</span>
+            <span data-i18n-lang="en">I accept the <a href="privacidad.html" data-legal="privacidad" target="_blank" rel="noopener">Privacy policy</a> and allow Biinyu to email me about the OYYO launch.</span>
+          </label>
+        </p>
+      </form>
+      <p class="wl-status" id="waitlist-status" role="status" aria-live="polite"></p>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap footer-grid">
+    <div class="footer-brand">
+      <img class="footer-brand-logo" src="assets/vector/logo.svg" alt="Biinyu Studio" width="140" height="53">
+      <p>Cartagena de Indias · Colombia</p>
+      <p><mark class="todo" data-todo="correo">[correo de contacto]</mark></p>
+    </div>
+    <nav class="footer-links" aria-label="Redes y tiendas / Social">
+      <a href="https://biinyugames.itch.io/" target="_blank" rel="noopener noreferrer">itch.io<span class="sr-only"> <span data-i18n-lang="es">(se abre en una pestaña nueva)</span><span data-i18n-lang="en">(opens in a new tab)</span></span><svg viewBox="0 0 12 12" aria-hidden="true" focusable="false"><path d="M3.5 8.5l5-5M4.5 3.5h4v4" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+      <a href="https://biinyu.com.co/" target="_blank" rel="noopener noreferrer">biinyu.com.co<span class="sr-only"> <span data-i18n-lang="es">(se abre en una pestaña nueva)</span><span data-i18n-lang="en">(opens in a new tab)</span></span><svg viewBox="0 0 12 12" aria-hidden="true" focusable="false"><path d="M3.5 8.5l5-5M4.5 3.5h4v4" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+      <a href="https://www.facebook.com/biinyu" target="_blank" rel="noopener noreferrer">Facebook<span class="sr-only"> <span data-i18n-lang="es">(se abre en una pestaña nueva)</span><span data-i18n-lang="en">(opens in a new tab)</span></span><svg viewBox="0 0 12 12" aria-hidden="true" focusable="false"><path d="M3.5 8.5l5-5M4.5 3.5h4v4" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+      <a href="https://www.linkedin.com/company/biinyugames" target="_blank" rel="noopener noreferrer">LinkedIn<span class="sr-only"> <span data-i18n-lang="es">(se abre en una pestaña nueva)</span><span data-i18n-lang="en">(opens in a new tab)</span></span><svg viewBox="0 0 12 12" aria-hidden="true" focusable="false"><path d="M3.5 8.5l5-5M4.5 3.5h4v4" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+    </nav>
+  </div>
+  <div class="wrap footer-bottom">
+    <p>© <span id="year"></span> Biinyu Games Studio. <span data-i18n-lang="es">Todos los derechos reservados.</span><span data-i18n-lang="en">All rights reserved.</span></p>
+    <nav class="footer-legal" aria-label="Legal">
+      <a href="privacidad.html" data-legal="privacidad"><span data-i18n-lang="es">Política de privacidad</span><span data-i18n-lang="en">Privacy policy</span></a>
+      <a href="terminos.html" data-legal="terminos"><span data-i18n-lang="es">Términos y condiciones</span><span data-i18n-lang="en">Terms of use</span></a>
+      <a href="cookies.html" data-legal="cookies"><span data-i18n-lang="es">Política de cookies</span><span data-i18n-lang="en">Cookie policy</span></a>
+      <button type="button" data-cookie-settings><span data-i18n-lang="es">Preferencias de cookies</span><span data-i18n-lang="en">Cookie settings</span></button>
+    </nav>
+  </div>
+</footer>
+
+<script>
+/* ============================================================
+   i18n
+   ============================================================ */
+function setLang(lang){
+  document.documentElement.setAttribute('lang', lang);
+  document.querySelectorAll('[data-lang-btn]').forEach(b=>{
+    b.setAttribute('aria-pressed', String(b.dataset.langBtn === lang));
+  });
+  try{ localStorage.setItem('biinyu_lang', lang); }catch(e){}
+}
+document.querySelectorAll('[data-lang-btn]').forEach(btn=>{
+  btn.addEventListener('click', ()=> setLang(btn.dataset.langBtn));
+});
+let initialLang = 'es';
+try{
+  const saved = localStorage.getItem('biinyu_lang');
+  if(saved === 'es' || saved === 'en') initialLang = saved;
+  else if((navigator.language||'').toLowerCase().startsWith('en')) initialLang = 'en';
+}catch(e){}
+setLang(initialLang);
+document.getElementById('year').textContent = new Date().getFullYear();
+
+const REDUCED_MOTION = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+/* ============================================================
+   TOPBAR — fondo al hacer scroll
+   ============================================================ */
+const topbar = document.getElementById('topbar');
+const s2Card = document.getElementById('oyyo-card');
+function updateTopbar(){
+  // Efecto de vidrio de la barra superior desactivado por ahora (a pedido
+  // del cliente): la barra se mantiene igual en todo momento.
+  // topbar.classList.toggle('scrolled', s2Card.getBoundingClientRect().top <= topbar.offsetHeight);
+}
+document.addEventListener('scroll', updateTopbar, {passive:true});
+updateTopbar();
+
+/* ============================================================
+   "CONOCE NUESTRO PRÓXIMO LANZAMIENTO" — al hacer clic, llevar
+   directo a la sección 2 YA a tamaño completo (no a la tarjeta
+   chica del principio del zoom). Se salta a un punto un poco
+   pasado el final del zoom (ver HOLD en oyyoZoom: el tramo donde
+   la tarjeta ya está a tope y solo descansa), en vez de dejar que
+   el usuario tenga que seguir bajando para verla completa.
+   El descenso es UNA sola curva continua calculada cuadro a cuadro.
+   Ojo: <html> tiene scroll-behavior:smooth, y con eso scrollTo con
+   behavior:'auto' NO es instantáneo (hereda el suave de la CSS):
+   cada cuadro arrancaba su propio scroll suave nativo y la animación
+   se arrastraba segundos. Por eso, mientras dura, se apaga el
+   scroll suave de la CSS en línea y se restaura al terminar.
+   ============================================================ */
+(function scrollHintJump(){
+  const link = document.querySelector('.scroll-hint');
+  const wrap = document.getElementById('oyyo-zoom-wrap');
+  if(!link || !wrap) return;
+  const root = document.documentElement;
+
+  // easeInOutSine: se mueve visiblemente desde el primer cuadro (sin la
+  // pausa inicial de las curvas cúbicas) y se posa suave al llegar.
+  const ease = t => -(Math.cos(Math.PI * t) - 1) / 2;
+
+  let raf = 0;
+  function stop(){
+    if(raf){ cancelAnimationFrame(raf); raf = 0; }
+    root.style.scrollBehavior = '';
+    removeEventListener('wheel', stop);
+    removeEventListener('touchstart', stop);
+    removeEventListener('keydown', stop);
+  }
+
+  link.addEventListener('click', e=>{
+    e.preventDefault();
+    stop();
+    const rect = wrap.getBoundingClientRect();
+    const RAW_FULL = 0.92; // dentro del tramo de reposo a tamaño completo
+    const targetY = Math.max(0, window.scrollY + rect.top - window.innerHeight + RAW_FULL * rect.height);
+    const startY = window.scrollY;
+    const diff = targetY - startY;
+
+    root.style.scrollBehavior = 'auto';
+    if(REDUCED_MOTION || Math.abs(diff) < 1){ window.scrollTo(0, targetY); stop(); return; }
+
+    // más recorrido, un poco más de tiempo, dentro de un rango cómodo
+    const duration = Math.min(1700, Math.max(1000, 600 + Math.abs(diff) * 0.3));
+    // si el usuario mueve la rueda, toca o usa el teclado, recupera el control
+    addEventListener('wheel', stop, {passive:true});
+    addEventListener('touchstart', stop, {passive:true});
+    addEventListener('keydown', stop);
+
+    const start = performance.now();
+    function step(now){
+      const t = Math.min(1, (now - start) / duration);
+      window.scrollTo(0, startY + diff * ease(t));
+      if(t < 1){ raf = requestAnimationFrame(step); }
+      else { raf = 0; stop(); }
+    }
+    window.scrollTo(0, startY + diff * ease(Math.min(1, 16 / duration)));
+    raf = requestAnimationFrame(step);
+  });
+})();
+
+/* ============================================================
+   PARTÍCULAS FLOTANTES — generadas por código, no vienen de la
+   maqueta (chispas/luciérnagas que refuerzan la sensación de
+   profundidad del héroe)
+   ============================================================ */
+function scatterSparks(container, count, opts={}){
+  const rand = (a,b)=> a + Math.random()*(b-a);
+  for(let i=0;i<count;i++){
+    const s = document.createElement('div');
+    s.className = 'spark' + (Math.random() < (opts.blueRatio||0) ? ' blue' : '');
+    const size = rand(opts.minSize||3, opts.maxSize||7);
+    s.style.width = size+'px'; s.style.height = size+'px';
+    s.style.left = rand(4,96)+'%'; s.style.top = rand(8,92)+'%';
+    s.style.animationDelay = rand(-6,0)+'s';
+    s.style.animationDuration = rand(4.5,8)+'s';
+    container.appendChild(s);
+  }
+}
+scatterSparks(document.getElementById('hero-sparks'), 16, {blueRatio:.4, minSize:3, maxSize:7});
+
+/* ============================================================
+   PARALLAX DEL HÉROE — scroll (velocidad por capa, con signo) + cursor
+   (desplazamiento suavizado tipo "ventana 3D")
+   data-scroll negativo = la capa SUBE; positivo = BAJA (el título).
+   Al hacer scroll, las capas del arte suben y el título baja,
+   quedando oculto detrás/debajo de ellas.
+   ============================================================ */
+(function heroParallax(){
+  const hero = document.getElementById('hero');
+  const layers = [...hero.querySelectorAll('[data-scroll]')]
+    .map(el=>({
+      el,
+      scrollSpeed: parseFloat(el.dataset.scroll)||0,
+      mouseSpeed: parseFloat(el.dataset.mouse)||0,
+    }));
+  if(REDUCED_MOTION || !layers.length) return;
+
+  // data-mouse está en px DEL FRAME (1440 de ancho), igual que el
+  // sangrado oculto de cada capa. k lo convierte a px de pantalla: en
+  // una pantalla de 1024px el frame (y su sangrado) se ve al 71%, así
+  // que el movimiento también — el corte nunca queda a la vista.
+  const stage = hero.querySelector('.px-stage');
+  let k = 1;
+  const measure = () => { k = stage.getBoundingClientRect().width / 1440 || 1; };
+  measure();
+  window.addEventListener('resize', measure, {passive:true});
+
+  let mouseX=0, mouseY=0, smX=0, smY=0;
+  const hasHover = window.matchMedia('(hover:hover)').matches;
+  if(hasHover){
+    hero.addEventListener('pointermove', e=>{
+      const r = hero.getBoundingClientRect();
+      mouseX = ((e.clientX - r.left)/r.width - 0.5) * 2;
+      mouseY = ((e.clientY - r.top)/r.height - 0.5) * 2;
+    });
+    hero.addEventListener('pointerleave', ()=>{ mouseX=0; mouseY=0; });
+  }
+
+  function apply(){
+    smX += (mouseX - smX) * .06;
+    smY += (mouseY - smY) * .06;
+    const rect = hero.getBoundingClientRect();
+    // Acotado a la altura del propio hero: el recorrido del parallax
+    // termina justo cuando el hero sale de pantalla, en vez de seguir
+    // creciendo sin límite — así el remate ("todo sube, las letras
+    // quedan ocultas") ocurre siempre dentro del propio scroll del hero.
+    const scrollOffset = Math.min(rect.height, Math.max(0, -rect.top));
+    layers.forEach(l=>{
+      const ty = scrollOffset * l.scrollSpeed;
+      const tx = smX * l.mouseSpeed * k;
+      const tyMouse = smY * l.mouseSpeed * .6 * k;
+      const move = `translate3d(${tx.toFixed(1)}px, ${(ty+tyMouse).toFixed(1)}px, 0)`;
+      l.el.style.transform = move;
+    });
+    requestAnimationFrame(apply);
+  }
+  requestAnimationFrame(apply);
+})();
+
+/* ============================================================
+   SECCIÓN OYYO — EFECTO DE ZOOM LIGADO AL SCROLL
+   Mientras el usuario avanza por el wrapper alto, la tarjeta
+   (fija en pantalla vía position:sticky) escala de ~40% a 100%
+   y su radio de borde pasa de "tarjeta" a "sección completa".
+   ============================================================ */
+(function oyyoZoom(){
+  const wrap = document.getElementById('oyyo-zoom-wrap');
+  const card = document.getElementById('oyyo-card');
+  const MIN_SCALE = 0.52, MAX_RADIUS = 34;
+  const HOLD = 0.12;   // último 12% del recorrido: reposo, ya a tamaño completo
+
+  // Relación 1:1 con el scroll: el tamaño de la tarjeta es exactamente
+  // proporcional a cuánto has bajado, sin curvas que aceleren el cambio
+  // a la mitad del recorrido (eso se sentía como "llega a un punto y de
+  // repente se expande a pantalla completa").
+  const smooth = t => t;
+
+  // amortiguación: el valor pintado persigue al objetivo, así el zoom
+  // se siente con inercia en vez de pegado 1:1 a la rueda del ratón
+  let shown = 0, target = 0, raf = 0;
+
+  function computeTarget(){
+    // El progreso cuenta desde que la sección ENTRA por abajo de la
+    // pantalla (rect.top = alto de ventana) hasta que termina su tramo
+    // sticky (rect.bottom = alto de ventana): la tarjeta crece de forma
+    // continua mientras sube hacia ti, en vez de esperar quieta y
+    // pequeña a que la sección se pegue arriba.
+    const rect = wrap.getBoundingClientRect();
+    const vh = window.innerHeight;
+    const raw = rect.height > 0 ? Math.min(1, Math.max(0, (vh - rect.top) / rect.height)) : 1;
+    const t = Math.min(1, raw / (1 - HOLD));
+    target = smooth(t);
+  }
+
+  // FLUIDEZ
+  // · Seguimiento por TIEMPO, no por frame: la misma suavidad a 60, 120 o
+  //   144 Hz, y sin tirones cuando un frame se retrasa.
+  // · Por frame solo cambia el transform (lo mueve el compositor, sin
+  //   repintar). La sombra animada, que repintaba toda la tarjeta en cada
+  //   frame, se eliminó; el radio del borde solo se reescribe cuando cambia
+  //   de píxel entero (~34 repintados en todo el zoom en vez de uno por frame).
+  // · will-change solo mientras se mueve: en reposo se quita y el navegador
+  //   vuelve a rasterizar la tarjeta nítida a su tamaño final.
+  // Al crecer (scroll hacia abajo) la tarjeta sigue el scroll de forma
+  // directa, sin retraso — el tamaño queda pegado a la posición exacta
+  // del scroll en vez de "perseguirla" con inercia, que era lo que se
+  // sentía como fuera de sincro. Al encoger (scroll hacia arriba, vuelta
+  // a la sección 1) sí se usa un tiempo de seguimiento largo: si el
+  // usuario hace un scroll grande de golpe, en vez de que la tarjeta se
+  // encoja de un salto en ~300ms, tarda más y se ve controlada.
+  const TAU_SHRINK = 260;
+  let lastT = 0, lastRadius = -1;
+
+  function paint(){
+    const scale = MIN_SCALE + (1 - MIN_SCALE) * shown;
+    // Pequeña, la tarjeta arranca ~18vh más arriba (su borde superior
+    // queda cerca del tope de la pantalla en vez de a mitad) y al crecer
+    // se asienta en su posición final centrada.
+    const lift = -(1 - shown) * window.innerHeight * 0.18;
+    card.style.transform = `translate3d(0,${lift.toFixed(2)}px,0) scale(${scale.toFixed(5)})`;
+    const radius = Math.round(MAX_RADIUS * (1 - shown));
+    if(radius !== lastRadius){ card.style.borderRadius = radius + 'px'; lastRadius = radius; }
+  }
+
+  function loop(now){
+    // Solo se usa para encoger (ver onScroll): perseguir "target" con
+    // inercia mientras se sigue moviendo hacia abajo (más chico).
+    const dt = lastT ? Math.min(64, now - lastT) : 16.7;
+    lastT = now;
+    const diff = target - shown;
+    if(diff >= -0.0003){
+      shown = target; paint();
+      raf = 0; lastT = 0;
+      card.style.willChange = 'auto';
+      updateTopbar();              // re-evalúa la barra con la posición ya asentada
+      return;
+    }
+    shown += diff * (1 - Math.exp(-dt / TAU_SHRINK));
+    paint();
+    raf = requestAnimationFrame(loop);
+  }
+
+  function onScroll(){
+    computeTarget();
+    if(REDUCED_MOTION){ shown = target; paint(); return; }
+    if(target >= shown){
+      // Crecer: pegado 1:1 al scroll, sin animación de persecución.
+      if(raf){ cancelAnimationFrame(raf); raf = 0; lastT = 0; }
+      shown = target; paint();
+      card.style.willChange = 'auto';
+      updateTopbar();
+    } else if(!raf){
+      card.style.willChange = 'transform'; raf = requestAnimationFrame(loop);
+    }
+  }
+
+  if(REDUCED_MOTION){
+    card.style.transform = 'scale(1)';
+    card.style.borderRadius = '0px';
+  } else {
+    window.addEventListener('scroll', onScroll, {passive:true});
+    window.addEventListener('resize', onScroll, {passive:true});
+    computeTarget(); shown = target; paint();
+  }
+})();
+
+/* ============================================================
+   VIDEO DE LA SECCIÓN OYYO — se reproduce en bucle solo mientras la
+   sección está a la vista, para no gastar datos ni batería de más
+   antes de que el usuario llegue hasta ahí. Con "reducir movimiento"
+   activado, se queda quieto en la imagen de póster.
+   ============================================================ */
+(function s2Video(){
+  const video = document.querySelector('.s2-art');
+  if(!video || video.tagName !== 'VIDEO') return;
+  if(REDUCED_MOTION){ video.removeAttribute('autoplay'); video.pause(); return; }
+  if('IntersectionObserver' in window){
+    const io = new IntersectionObserver(entries=>{
+      entries.forEach(en=>{
+        if(en.isIntersecting) video.play().catch(()=>{});
+        else video.pause();
+      });
+    }, {threshold:.1});
+    io.observe(video);
+  }
+})();
+
+/* ============================================================
+   BOTONES MAGNÉTICOS
+   ============================================================ */
+if(window.matchMedia('(hover:hover)').matches && !REDUCED_MOTION){
+  document.querySelectorAll('.magnetic').forEach(btn=>{
+    btn.addEventListener('mousemove', e=>{
+      const r = btn.getBoundingClientRect();
+      const mx = e.clientX - (r.left+r.width/2);
+      const my = e.clientY - (r.top+r.height/2);
+      btn.style.setProperty('--bx', (mx*0.2)+'px');
+      btn.style.setProperty('--by', (my*0.26)+'px');
+    });
+    btn.addEventListener('mouseleave', ()=>{
+      btn.style.setProperty('--bx','0px'); btn.style.setProperty('--by','0px');
+    });
+  });
+}
+
+/* reveal on scroll */
+const revealEls = document.querySelectorAll('.reveal');
+if('IntersectionObserver' in window){
+  const io = new IntersectionObserver((entries)=>{
+    entries.forEach(en=>{ if(en.isIntersecting){ en.target.classList.add('in'); io.unobserve(en.target); } });
+  }, {threshold:.15, rootMargin:'0px 0px -8% 0px'});
+  revealEls.forEach(el=> io.observe(el));
+} else { revealEls.forEach(el=> el.classList.add('in')); }
+
+/* ============================================================
+   LISTA DE ESPERA
+   ============================================================ */
+/* WAITLIST:CONFIG:START */
+const WAITLIST_ENDPOINT = '';
+const WAITLIST_MODE = 'endpoint';
+/* WAITLIST:CONFIG:END */
+
+(function waitlist(){
+  const form = document.getElementById('waitlist-form');
+  const status = document.getElementById('waitlist-status');
+  const countEl = document.getElementById('waitlist-count');
+  const btn = form.querySelector('button');
+
+  function setStatus(state, esText, enText){
+    status.dataset.state = state;
+    status.innerHTML = `<span data-i18n-lang="es">${esText}</span><span data-i18n-lang="en">${enText}</span>`;
+  }
+
+  let dbCollection = null;
+  async function initDb(){
+    if(WAITLIST_MODE !== 'db') return;
+    try{
+      const db = await (window.claude && window.claude.use ? window.claude.use('db') : Promise.resolve(null));
+      if(!db) return;
+      dbCollection = db.collection('waitlist');
+      dbCollection.onSnapshot(snap=>{
+        countEl.innerHTML =
+          `<span data-i18n-lang="es">${snap.size} persona${snap.size===1?'':'s'} ya en la lista</span>`+
+          `<span data-i18n-lang="en">${snap.size} ${snap.size===1?'person':'people'} already on the list</span>`;
+      }, ()=>{});
+    }catch(e){ dbCollection = null; }
+  }
+  initDb();
+
+  const emailEl = document.getElementById('waitlist-email');
+  const consentEl = document.getElementById('waitlist-consent');
+  const honeypot = form.querySelector('.wl-hp');
+  // Cambia esta versión si cambias la Política de privacidad: queda guardada
+  // con cada correo como prueba de qué texto aceptó la persona.
+  const CONSENT_VERSION = 'privacidad-2026-09-15';
+
+  emailEl.addEventListener('input', ()=> emailEl.removeAttribute('aria-invalid'));
+  consentEl.addEventListener('change', ()=> consentEl.removeAttribute('aria-invalid'));
+
+  function done(){
+    setStatus('success', '¡Listo! Te avisaremos apenas OYYO encaje.', "You're in! We'll let you know the moment OYYO fits.");
+    form.reset();
+  }
+
+  form.addEventListener('submit', async (e)=>{
+    e.preventDefault();
+    const email = emailEl.value.trim();
+    if(!email || !/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(email)){
+      emailEl.setAttribute('aria-invalid', 'true');
+      emailEl.focus();
+      setStatus('error', 'Escribe un correo válido, por ejemplo tu@correo.com.', 'Enter a valid email, like you@email.com.');
+      return;
+    }
+    if(!consentEl.checked){
+      consentEl.setAttribute('aria-invalid', 'true');
+      consentEl.focus();
+      setStatus('error', 'Para avisarte necesitamos que aceptes la Política de privacidad.', 'Please accept the Privacy policy so we can notify you.');
+      return;
+    }
+    // Bots que rellenan el campo oculto: se les responde "listo" sin guardar nada.
+    if(honeypot && honeypot.value){ done(); return; }
+
+    const record = {
+      email,
+      consent: true,
+      consentVersion: CONSENT_VERSION,
+      lang: document.documentElement.lang === 'en' ? 'en' : 'es',
+      ts: Date.now()
+    };
+    btn.disabled = true;
+    btn.setAttribute('aria-busy', 'true');
+    setStatus('pending', 'Enviando…', 'Sending…');
+    try{
+      if(WAITLIST_MODE === 'db' && dbCollection){
+        await dbCollection.add(record);
+        done();
+      } else if(WAITLIST_MODE === 'endpoint' && WAITLIST_ENDPOINT){
+        const res = await fetch(WAITLIST_ENDPOINT, {
+          method:'POST', headers:{'Accept':'application/json','Content-Type':'application/json'},
+          body: JSON.stringify(record)
+        });
+        if(!res.ok) throw new Error('bad status');
+        done();
+      } else {
+        await new Promise(r=>setTimeout(r, 600));
+        setStatus('success', 'Vista previa: este formulario todavía no guarda correos.', "Preview: this form doesn't save emails yet.");
+        form.reset();
+      }
+    }catch(err){
+      setStatus('error', 'No pudimos registrarte. Revisa tu conexión e inténtalo de nuevo.', "We couldn't sign you up. Check your connection and try again.");
+    }finally{
+      btn.disabled = false;
+      btn.removeAttribute('aria-busy');
+    }
+  });
+})();
+</script>
+<script src="assets/site/consent.js" defer></script>
+</body>
+</html>
