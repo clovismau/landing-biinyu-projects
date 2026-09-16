@@ -1,0 +1,126 @@
+/* Páginas legales y 404 de Biinyu Studio: mismo lenguaje visual que la
+   landing (fondo #040A12, amarillo de marca, Poppins + Baloo 2, botones con
+   relieve). Las reglas .legal-doc y .legal-dialog también se incrustan en
+   los builds de Artifact, donde las políticas se abren como diálogos. */
+
+html[lang="es"] [data-i18n-lang="en"],
+html[lang="en"] [data-i18n-lang="es"]{display:none}
+
+/* ---------- Estructura de página ---------- */
+.legal-page{
+  --lg-yellow:#FFE23C;--lg-ink:#F6FBEF;--lg-dim:#B9C7B0;--lg-faint:#8C9A88;--lg-line:rgba(255,255,255,.12);
+  --lg-edge:clamp(20px,6vw,64px);
+  margin:0;min-height:100vh;min-height:100svh;display:flex;flex-direction:column;
+  background:
+    radial-gradient(900px 480px at 88% -8%, rgba(60,180,255,.13), transparent 62%),
+    radial-gradient(760px 420px at -6% 4%, rgba(255,226,60,.08), transparent 60%),
+    #040A12;
+  color:var(--lg-ink);font-family:"Poppins",system-ui,-apple-system,"Segoe UI",sans-serif;-webkit-font-smoothing:antialiased;
+}
+.legal-page *{box-sizing:border-box}
+.legal-page img,.legal-page svg{display:block;max-width:100%}
+.legal-page :focus-visible{outline:2px solid var(--lg-yellow);outline-offset:3px;border-radius:6px}
+.legal-page ::selection{background:var(--lg-yellow);color:#040A12}
+
+.lp-skip{position:absolute;left:12px;top:-60px;z-index:10;padding:10px 16px;border-radius:8px;background:var(--lg-yellow);color:#040A12;
+  font:700 .85rem/1 "Poppins",sans-serif;text-decoration:none;transition:top .2s ease}
+.lp-skip:focus{top:12px}
+
+.lp-top{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:26px var(--lg-edge) 18px}
+.lp-brand{display:block;border-radius:8px}
+.lp-brand img{height:44px;width:auto;transition:transform .35s cubic-bezier(.16,.8,.24,1)}
+.lp-brand:hover img{transform:scale(1.04) rotate(-2deg)}
+.lp-lang{display:flex;gap:3px;padding:3px;border-radius:999px;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.14)}
+.lp-lang button{padding:7px 15px;border:0;border-radius:999px;background:none;color:var(--lg-dim);font:700 .75rem/1 "Baloo 2",system-ui,sans-serif;
+  letter-spacing:.04em;cursor:pointer;transition:background-color .25s ease,color .25s ease}
+.lp-lang button[aria-pressed="true"]{background:var(--lg-yellow);color:#040A12}
+
+.lp-main{flex:1;width:100%;max-width:820px;margin:0 auto;padding:20px var(--lg-edge) 80px}
+.lp-back{display:inline-flex;align-items:center;gap:8px;margin:0 0 30px;padding:4px 0;color:var(--lg-dim);font:500 .875rem/1 "Poppins",sans-serif;
+  text-decoration:none;transition:color .25s ease}
+.lp-back svg{width:16px;height:16px;transition:transform .3s cubic-bezier(.22,1,.36,1)}
+.lp-back:hover{color:var(--lg-yellow)}
+.lp-back:hover svg{transform:translateX(-3px)}
+
+.lp-foot{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:10px 24px;padding:26px var(--lg-edge) 34px;
+  border-top:1px solid var(--lg-line);font-size:.75rem;color:var(--lg-faint)}
+.lp-foot p{margin:0}
+.lp-foot nav{display:flex;flex-wrap:wrap;gap:6px 20px}
+.lp-foot a,.lp-foot button{padding:4px 0;border:0;background:none;color:var(--lg-dim);font:400 .75rem/1.4 "Poppins",sans-serif;text-decoration:none;cursor:pointer;
+  transition:color .25s ease}
+.lp-foot a:hover,.lp-foot button:hover,.lp-foot a[aria-current="page"]{color:var(--lg-yellow)}
+
+@media (max-width:560px){
+  .lp-top{padding:18px var(--lg-edge) 12px}
+  .lp-brand img{height:36px}
+  .lp-main{padding-bottom:56px}
+}
+
+/* ---------- Documento legal ---------- */
+.legal-doc{--lg-yellow:#FFE23C;--lg-dim:#C3CFBC;color:#F6FBEF;font:400 1rem/1.75 "Poppins",system-ui,sans-serif;text-align:left}
+.legal-kicker{margin:0 0 12px;font:700 .75rem/1 "Poppins",sans-serif;letter-spacing:.14em;text-transform:uppercase;color:var(--lg-yellow)}
+.legal-doc h1{margin:0;font:800 clamp(2.1rem,5.4vw,3.4rem)/1.04 "Baloo 2",system-ui,sans-serif;letter-spacing:-.01em;color:#fff;text-wrap:balance}
+.legal-updated{margin:14px 0 0;font-size:.85rem;color:rgba(255,255,255,.55)}
+.legal-lead{margin:22px 0 0;font-size:1.06rem;color:var(--lg-dim)}
+.legal-toc{margin:32px 0 4px;padding:18px 20px;border:1px solid rgba(255,255,255,.1);border-radius:18px;background:rgba(255,255,255,.035)}
+.legal-toc p{margin:0 0 8px;font:600 .75rem/1 "Poppins",sans-serif;letter-spacing:.1em;text-transform:uppercase;color:rgba(255,255,255,.6)}
+.legal-toc ol{margin:0;padding-left:1.3em;columns:2 230px;column-gap:28px;font-size:.9rem;line-height:1.95}
+.legal-toc li::marker{color:var(--lg-yellow)}
+.legal-toc a{color:var(--lg-dim);text-decoration:none}
+.legal-toc a:hover{color:var(--lg-yellow)}
+.legal-doc section{padding-top:38px;scroll-margin-top:16px}
+.legal-doc h2{display:flex;align-items:baseline;gap:12px;margin:0 0 12px;font:700 1.3rem/1.3 "Poppins",sans-serif;letter-spacing:0;color:#fff}
+.legal-doc h2 .n{flex:none;display:inline-grid;place-items:center;min-width:30px;height:30px;padding:0 8px;border-radius:9px;background:#FAE33D;color:#040A12;
+  font:800 .92rem/1 "Baloo 2",sans-serif;box-shadow:inset 0 -3px 3px rgba(0,0,0,.22);transform:translateY(-3px)}
+.legal-doc h3{margin:20px 0 6px;font:600 1.02rem/1.4 "Poppins",sans-serif;color:#fff}
+.legal-doc p,.legal-doc li{color:var(--lg-dim)}
+.legal-doc p{margin:0 0 12px}
+.legal-doc ul,.legal-doc ol{margin:0 0 14px;padding-left:1.25em}
+.legal-doc li{margin:5px 0}
+.legal-doc li::marker{color:var(--lg-yellow)}
+.legal-doc strong{color:#fff;font-weight:600}
+.legal-doc a{color:var(--lg-yellow);text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:3px}
+.legal-doc code{padding:2px 6px;border-radius:6px;background:rgba(255,255,255,.08);color:#fff;font:500 .86em/1 ui-monospace,SFMono-Regular,Consolas,monospace}
+.legal-facts{display:grid;grid-template-columns:max-content 1fr;gap:10px 22px;margin:0 0 14px;padding:16px 18px;border:1px solid rgba(255,255,255,.1);
+  border-radius:16px;background:rgba(255,255,255,.03)}
+.legal-facts dt{font-size:.9rem;font-weight:600;color:#fff}
+.legal-facts dd{margin:0;font-size:.9rem;color:var(--lg-dim)}
+.legal-table{margin:6px 0 16px;overflow-x:auto;border:1px solid rgba(255,255,255,.1);border-radius:16px}
+.legal-table table{width:100%;min-width:600px;border-collapse:collapse;font-size:.88rem;line-height:1.5}
+.legal-table th,.legal-table td{padding:12px 14px;text-align:left;vertical-align:top;border-bottom:1px solid rgba(255,255,255,.08)}
+.legal-table th{font-weight:600;color:#fff;background:rgba(255,255,255,.04)}
+.legal-table td{color:var(--lg-dim)}
+.legal-table tr:last-child td{border-bottom:0}
+.legal-note{margin:30px 0 0;padding:14px 16px;border-left:3px solid var(--lg-yellow);border-radius:0 12px 12px 0;background:rgba(255,226,60,.06);font-size:.9rem}
+mark.todo{padding:0 6px;border:1px dashed rgba(255,226,60,.55);border-radius:6px;background:rgba(255,226,60,.14);color:#FFE23C;font-weight:600}
+
+.legal-btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:52px;margin:0;padding:0 24px;border:0;border-radius:15px;
+  background:#FAE33D;color:#040A12;font:700 1rem/1 "Poppins",sans-serif;text-decoration:none;cursor:pointer;
+  box-shadow:inset 0 -6px 6px rgba(0,0,0,.25),inset 0 0 0 2px rgba(0,0,0,.2);
+  transition:filter .25s ease,background-color .25s ease,transform .15s ease,box-shadow .15s ease}
+.legal-btn:hover{filter:brightness(1.06)}
+.legal-btn:active{transform:translateY(1px);box-shadow:inset 0 -3px 5px rgba(0,0,0,.25),inset 0 0 0 2px rgba(0,0,0,.2)}
+.legal-btn--secondary{background:#44556C;color:#fff;box-shadow:inset 0 -6px 6px rgba(0,0,0,.25),inset 0 0 0 2px rgba(255,255,255,.1)}
+.legal-btn--secondary:hover{filter:none;background:#4E6079}
+.legal-btn--secondary:active{box-shadow:inset 0 -3px 5px rgba(0,0,0,.25),inset 0 0 0 2px rgba(255,255,255,.1)}
+.legal-doc .legal-btn{color:#040A12;text-decoration:none}
+
+@media (max-width:560px){
+  .legal-facts{grid-template-columns:1fr;gap:2px}
+  .legal-facts dd{margin-bottom:10px}
+  .legal-doc h2{font-size:1.14rem}
+}
+
+/* ---------- Diálogo legal (solo builds de Artifact) ---------- */
+.legal-dialog{width:min(860px,calc(100vw - 24px));max-width:none;max-height:calc(100svh - 24px);margin:auto;padding:0;overflow:auto;overscroll-behavior:contain;
+  border:1px solid rgba(255,255,255,.12);border-radius:24px;background:#07111C;color:#F6FBEF;box-shadow:0 30px 80px rgba(0,0,0,.6)}
+.legal-dialog::backdrop{background:rgba(4,10,18,.75);-webkit-backdrop-filter:blur(3px);backdrop-filter:blur(3px)}
+.legal-dialog[open]{animation:legal-pop .4s cubic-bezier(.22,1,.36,1)}
+@keyframes legal-pop{from{opacity:0;transform:translateY(14px) scale(.985)}}
+.legal-dialog-bar{position:sticky;top:0;z-index:1;display:flex;justify-content:flex-end;padding:12px 12px 4px;background:linear-gradient(#07111C 65%,rgba(7,17,28,0))}
+.legal-dialog-close{display:grid;place-items:center;width:42px;height:42px;padding:0;border:0;border-radius:12px;background:rgba(255,255,255,.08);color:#fff;
+  font:400 26px/1 "Poppins",sans-serif;cursor:pointer;transition:background-color .2s ease}
+.legal-dialog-close:hover{background:rgba(255,255,255,.15)}
+.legal-dialog-close:focus-visible{outline:2px solid #FFE23C;outline-offset:2px}
+.legal-dialog .legal-doc{padding:0 clamp(18px,5vw,52px) 44px}
+@media (prefers-reduced-motion:reduce){ .legal-dialog[open]{animation:none} }
